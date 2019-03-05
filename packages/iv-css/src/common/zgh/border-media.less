@@ -1,0 +1,123 @@
+.border,
+a.border {
+    border: 1px solid #ccc;
+}
+
+.borderT,
+a.borderT {
+    border-top: 1px solid #ccc;
+}
+
+.borderR,
+a.borderR {
+    border-right: 1px solid #ccc;
+}
+
+.borderB,
+a.borderB {
+    border-bottom: 1px solid #ccc;
+}
+
+.borderL,
+a.borderL {
+    border-left: 1px solid #ccc;
+}
+
+@media screen and (max-width:767px) {
+    .border,
+    a.border {
+        border:none;
+        position: relative;
+        &:after{
+            display: block;
+            content: '';
+            position: absolute;
+            top:-50%;
+            left:-50%;
+            width:200%;
+            height:200%;
+            border:1px solid #ccc;
+            transform: scale(.5);
+        }
+    }
+    .borderT,
+    .borderB,
+    .borderR,
+    .borderL,
+    a.borderT,
+    a.borderB,
+    a.borderR,
+    a.borderL {
+        position: relative;
+        overflow: hidden;
+        border: none;
+    }
+    .borderT:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+        display: block;
+        width: 200%;
+        height: 1px;
+        margin-left: -25%;
+        background: #ccc;
+        transform: scaleY(.5);
+    }
+    .borderL:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        display: block;
+        width: 1px;
+        height: 100%;
+        background: #ccc;
+        transform: scaleX(.5);
+        clear: both;
+    }
+    .borderTB:after,
+    .borderTB:before {
+        position: absolute;
+        left: 0;
+        content: '';
+        display: block;
+        width: 200%;
+        height: 1px;
+        margin-left: -25%;
+        background: #ccc;
+        transform: scaleY(.5);
+    }
+    .borderTB:before {
+        top: 0;
+        clear: both;
+    }
+    .borderTB:after {
+        bottom: 0;
+    }
+    .borderR:before {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: '';
+        display: block;
+        width: 1px;
+        height: 100%;
+        background: #ccc;
+        transform: scaleX(.5);
+        clear: both;
+    }
+    .borderB:after {
+        clear: both;
+        display: table;
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 200%;
+        height: 1px;
+        background: #ccc;
+        transform: scaleY(.5);
+        //      background-image: linear-gradient(0deg, transparent 50%, #ccc 50%);
+    }
+}

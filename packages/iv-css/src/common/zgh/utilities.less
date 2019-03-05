@@ -1,0 +1,231 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  .clearfix();
+}
+.center-block {
+  .center-block();
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  .text-hide();
+}
+
+.noselect{
+    .user-select(none)
+}
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}
+
+//垂直居中
+.middle_before:after {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+//多行限制
+
+.row1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.row2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.row3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.row4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.text-indent{
+    text-indent: 1em;
+}
+.text-indent2{
+    text-indent: 2em;
+}
+.text-indent3{
+    text-indent: 3em;
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.textC{
+    text-align: center;
+}
+.textL{
+    text-align: left;
+}
+.textR{
+    text-align: right;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.absoluteRT{
+  display: inline-block;
+    position: absolute;
+    top:1%;
+    right:1%;
+}
+.absoluteRB{
+  display: inline-block;
+    position: absolute;
+    bottom:1%;
+    right:1%;
+}
+.absoluteLT{
+  display: inline-block;
+    position: absolute;
+    top:1%;
+    left:1%;
+}
+.absoluteLB{
+  display: inline-block;
+    position: absolute;
+     left:1%;
+    bottom:1%;
+}
+.absoluteRC,
+.iconR{
+  display: inline-block;
+    position: absolute;
+     right:1%;
+    top:50%;
+    transform: translateY(-50%);
+     -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+
+
+}
+.absoluteLC,
+.iconL{
+  display: inline-block;
+    position: absolute;
+    top:50%;
+    left:1%;
+    transform: translateY(-50%);
+     -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.absoluteCC{
+  display: inline-block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+      -webkit-transform:translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+}
+.relative{
+    position: relative;
+
+}
+
+.box-shadow {
+    box-shadow: 0 0px 10px #ccc;
+    &.top {
+        box-shadow: 0 -1px 3px #ccc;
+    }
+    &.right {
+        box-shadow: 1px 0 10px #ccc;
+    }
+    &.bottom {
+        box-shadow: 0 1px 10px #ccc;
+    }
+    &.left {
+        box-shadow: -1px 0 10px #ccc;
+    }
+}
+.over-scroll{
+    overflow-y: scroll;
+    -webkit-overflow-scrolling : touch;
+}
+.over-hidden{
+    overflow: hidden;
+}
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #aab2bd;
+    /* placeholder字体大小  */
+    font-size: 14px;
+    /* placeholder位置  */
+  }

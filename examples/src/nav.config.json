@@ -1,0 +1,127 @@
+{
+  "zh-CN": [
+    {
+      "name": "开发指南",
+      "groups": [
+        {
+          "list": [
+            {
+              "path": "/intro",
+              "title": "项目介绍"
+            },
+            {
+              "path": "/quickstart",
+              "title": "快速上手"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "iv 组件",
+      "showInMobile": true,
+      "groups": [
+        {
+          "groupName": "基础组件",
+          "list": [
+            {
+              "path": "/badge",
+              "title": "Badge 标记"
+            },
+            {
+              "path": "/button",
+              "title": "Button 按钮"
+            },
+            {
+              "path": "/cell",
+              "title": "Cell 单元格"
+            },
+            {
+              "path": "/collapse",
+              "title": "Collapse 折叠面板"
+            },
+            {
+              "path": "/loading",
+              "title": "Loading 加载"
+            },
+
+            {
+              "path": "/chat-foot",
+              "title": "ChatFoot 底部输入框"
+            },
+            {
+              "path": "/foot",
+              "title": "Foot 底部tab"
+            },
+            {
+              "path": "/head",
+              "title": "Head 顶部标题栏"
+            },
+            {
+              "path": "/number",
+              "title": "Number 计数器"
+            },
+            {
+              "path": "/notice-bar",
+              "title": "NoticeBar 通告栏"
+            },
+            {
+              "path": "/tag",
+              "title": "Tag 标记"
+            },
+            {
+              "path": "/popup",
+              "title": "Popup 弹出窗"
+            },
+            {
+              "path": "/countdown",
+              "title": "Countdown 倒数计秒"
+            }
+          ]
+        },
+        {
+          "groupName": "表单组件",
+          "list": [
+            {
+              "path": "/radio",
+              "title": "Radio 单选框"
+            },
+            {
+              "path": "/checkbox",
+              "title": "Checkbox 多选框"
+            },
+            {
+              "path": "/switch",
+              "title": "Switch 开关"
+            },
+            {
+              "path": "/search",
+              "title": "Search 搜索框"
+            }
+          ]
+        },
+        {
+          "groupName": "操作组件",
+          "list": [
+            {
+              "path": "/alert",
+              "title": "Alert 弹框"
+            },
+            {
+              "path": "/confirm",
+              "title": "Confirm 弹框"
+            },
+            {
+              "path": "/toast",
+              "title": "Toast 弹框"
+            },
+            {
+              "path": "/pull-refresh",
+              "title": "PullRefresh 下拉刷新/滚到底部加载更多"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

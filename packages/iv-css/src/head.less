@@ -1,0 +1,72 @@
+@import "common/config";
+
+#head {
+  @common_cl:#424242;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: @m-top;
+  background: @common_cl;
+  z-index: 999;
+  .logo {
+    .m-w(150);
+  }
+  .input-btn {
+    max-width: 80%;
+    width: 65%;
+    .h(62);
+    margin: 0 auto;
+    border-radius: 6px;
+    .lh(62);
+    i {
+      color: #dedede;
+      margin-left: 10px;
+      .fs(40)
+    }
+  }
+  .iconL {
+    display: block;
+    width:13%;
+    height: @m-top;
+  }
+  .iconR {
+
+    display: block;
+    width:13%;
+    height: @m-top;
+    line-height: @m-top;
+  }
+  .msgnum {
+    display: block;
+    height: 80%;
+    margin-top: 10%;
+  }
+  .msg {
+    span {
+      @L: 16px;
+      position: absolute;
+      top: 20%;
+      right: -10%;
+      display: block;
+      height: @L;
+      width: @L;
+      line-height: @L;
+      background: red;
+      border-radius: 100%;
+    }
+  }
+  .title{
+    line-height:@m-top;
+  }
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  transform: scaleY(.5);
+  background: #ccc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

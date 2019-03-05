@@ -1,0 +1,75 @@
+@value: (750/320)*20;//(设计图/320)*20
+@top: unit(90/2, px);
+@bottom: unit(120/2, px);
+@theme:rgba(80, 119, 170, 1);
+
+.fs(@a) {
+    font-size: unit(@a, px) ;
+}
+.lh(@a) {
+    line-height: unit(@a, px) ;
+}
+.mgT(@a) {
+    margin-top: unit(@a, px)  ;
+}
+.mgR(@a) {
+    margin-right: unit(@a, px)  ;
+}
+.mgB(@a) {
+    margin-bottom: unit(@a, px)  ;
+}
+.mgL(@a) {
+    margin-left: unit(@a, px)  ;
+}
+.pdT(@a) {
+    padding-top: unit(@a, px)  ;
+}
+.pdR(@a) {
+    padding-right: unit(@a, px)  ;
+}
+.pdB(@a) {
+    padding-bottom: unit(@a, px)  ;
+}
+.pdL(@a) {
+    padding-left: unit(@a, px)  ;
+}
+
+
+//移动端
+.m-w(@a) {
+    width: unit(@a/@value, rem) ;
+}
+.m-h(@a) {
+    height: unit(@a/@value, rem) ;
+}
+.m-fs(@a) {
+    font-size: unit(@a/@value, rem) ;
+}
+.m-lh(@a) {
+    line-height: unit(@a/@value, rem) ;
+}
+.m-mgT(@a) {
+    margin-top: unit(@a/@value, rem)  ;
+}
+.m-mgR(@a) {
+    margin-right: unit(@a/@value, rem)  ;
+}
+.m-mgB(@a) {
+    margin-bottom: unit(@a/@value, rem)  ;
+}
+.m-mgL(@a) {
+    margin-left: unit(@a/@value, rem)  ;
+}
+.m-pdT(@a) {
+    padding-top: unit(@a/@value, rem)  ;
+}
+.m-pdR(@a) {
+    padding-right: unit(@a/@value, rem)  ;
+}
+.m-pdB(@a) {
+    padding-bottom: unit(@a/@value, rem)  ;
+}
+.m-pdL(@a) {
+    padding-left: unit(@a/@value, rem)  ;
+}
+
