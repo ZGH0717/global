@@ -4,7 +4,7 @@
   "description": "A Vue.js project",
   "author": "qiangdada",
   "license": "MIT",
-  "main": "lib/iv.js",
+  "main": "lib/global-vue.js",
   "files": [
     "lib",
     "src",
@@ -12,19 +12,19 @@
   ],
   "private": false,
   "scripts": {
-    "bootstrap": "cnpm install",
+    "bootstrap": "npm install ",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "deploy": "npm run deploy:docs && gh-pages -d examples/dist",
     "deploy:docs": "rimraf examples/dist && node build/build.js",
     "clean": "rimraf lib && rimraf packages/*/lib",
-    "dist": "npm run clean && npm run lint && npm run build:iv && npm run build:iv-css",
+    "dist": "npm run clean && npm run lint && npm run build:global-vue && npm run build:global-css",
     "release": "npm run bootstrap && sh build/release.sh",
     "start": "npm run dev",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
-    "build:iv": "webpack --progress --hide-modules --config build/webpack.build.js && rimraf examples/dist && cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.build.min.js",
-    "build:iv-css": "gulp build --gulpfile packages/iv-css/gulpfile.js && rimraf lib/iv-css && cp-cli packages/iv-css/lib lib/iv-css"
+    "build:global-vue": "webpack --progress --hide-modules --config build/webpack.build.js && rimraf examples/dist && cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.build.min.js",
+    "build:global-css": "gulp build --gulpfile packages/global-css/gulpfile.js && rimraf lib/global-css && cp-cli packages/global-css/lib lib/global-css"
   },
   "dependencies": {
     "element-ui": "^2.2.2",
@@ -53,11 +53,14 @@
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.0",
     "eslint": "^4.15.0",
+    "eslint-config-prettier": "^4.1.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
+    "eslint-plugin-html": "^5.0.3",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-vue": "^4.0.0",
@@ -93,6 +96,7 @@
     "postcss-salad": "^2.0.1",
     "postcss-url": "^7.2.1",
     "precss": "^3.1.2",
+    "prettier": "^1.16.4",
     "rimraf": "^2.6.0",
     "saladcss-bem": "^0.0.2",
     "semver": "^5.3.0",
@@ -117,7 +121,7 @@
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions",
+    "last 20 versions",
     "not ie <= 8"
   ]
 }

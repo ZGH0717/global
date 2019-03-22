@@ -18,7 +18,7 @@
       ]
     },
     {
-      "name": "iv 组件",
+      "name": "global-vue 组件",
       "showInMobile": true,
       "groups": [
         {
@@ -35,6 +35,10 @@
             {
               "path": "/cell",
               "title": "Cell 单元格"
+            },
+            {
+              "path": "/avatar",
+              "title": "Avatar 图片头像"
             },
             {
               "path": "/collapse",
@@ -68,10 +72,6 @@
             {
               "path": "/tag",
               "title": "Tag 标记"
-            },
-            {
-              "path": "/popup",
-              "title": "Popup 弹出窗"
             },
             {
               "path": "/countdown",
@@ -110,6 +110,14 @@
             {
               "path": "/confirm",
               "title": "Confirm 弹框"
+            },
+            {
+              "path": "/popup",
+              "title": "Popup 弹出窗"
+            },
+            {
+              "path": "/dropdown",
+              "title": "Dropdown 下拉"
             },
             {
               "path": "/toast",

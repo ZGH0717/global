@@ -1,34 +1,53 @@
 <template>
   <div class="side-nav mainBox">
     <ul>
-      <li class="nav-item" v-for="item in data">
-        <a href="javascript:void(0)" class="bold" v-if="!item.path" @click="handleTitleClick(item)">{{ item.name }}</a>
+      <li class="nav-item" v-for="(item, itemIndex) in data" :key="itemIndex">
+        <a
+          href="javascript:void(0)"
+          class="bold"
+          v-if="!item.path"
+          @click="handleTitleClick(item)"
+          >{{ item.name }}</a
+        >
         <router-link
           v-else
           active-class="active"
           :to="base + item.path"
           exact
-          v-text="item.title || item.name" />
+          v-text="item.title || item.name"
+        />
         <ul class="pure-menu-list sub-nav" v-if="item.children">
-          <li class="nav-item" v-for="navItem in item.children">
+          <li
+            class="nav-item"
+            v-for="(navItem, index) in item.children"
+            :key="index"
+          >
             <router-link
               active-class="active"
               :to="base + navItem.path"
-              v-text="navItem.title || navItem.name" />
+              v-text="navItem.title || navItem.name"
+            />
           </li>
         </ul>
         <template v-if="item.groups">
-          <div class="nav-group" v-for="group in item.groups">
+          <div
+            class="nav-group"
+            v-for="(group, groupIndex) in item.groups"
+            :key="groupIndex"
+          >
             <div class="nav-group__title">{{ group.groupName }}</div>
             <ul class="pure-menu-list">
-              <template v-for="navItem in group.list">
+              <template v-for="(navItem, navItemIndex) in group.list">
                 <li
                   class="nav-item"
-                  v-if="!navItem.disabled">
+                  v-if="!navItem.disabled"
+                  :key="navItemIndex"
+                >
                   <router-link
                     active-class="active"
                     :to="base + navItem.path"
-                    v-text="navItem.title" />
+                    v-text="navItem.title"
+                  />
                 </li>
               </template>
             </ul>
@@ -45,7 +64,7 @@ export default {
     data: Array,
     base: {
       type: String,
-      default: ''
+      default: ""
     }
   },
 
@@ -57,17 +76,17 @@ export default {
       }
     }
   }
-}
+};
 </script>
 
 <style lang="postcss">
 .side-nav {
-	flex: 0 0 250px;
-	box-sizing: border-box;
-	padding: 55px 0;
-	border-right: 1px solid #e5e5e5;
-  width:250px;
-  opacity: .6;
+  flex: 0 0 250px;
+  box-sizing: border-box;
+  padding: 55px 0;
+  border-right: 1px solid #e5e5e5;
+  width: 250px;
+  opacity: 0.6;
   transition: all 1s;
   &::-webkit-scrollbar {
     height: 6px;
@@ -78,43 +97,43 @@ export default {
     border-radius: 6px;
     background-color: transparent;
   }
-  &:hover{
+  &:hover {
     opacity: 1;
     &::-webkit-scrollbar-thumb {
       background-color: #ccc;
     }
   }
-	li {
-		list-style: none;
-	}
-	ul {
-		padding: 0;
-		margin: 0;
-		overflow: hidden;
-	}
+  li {
+    list-style: none;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
 
-	.nav-item {
-		a {
-			font-size: 16px;
-			color: #333;
-			line-height: 40px;
-			height: 40px;
-			margin: 0;
-			padding: 0;
-			text-decoration: none;
-			display: block;
-			position: relative;
-			transition: all .3s;
-			padding: 0 20px;
+  .nav-item {
+    a {
+      font-size: 16px;
+      color: #333;
+      line-height: 40px;
+      height: 40px;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      transition: all 0.3s;
+      padding: 0 20px;
 
-			&.active {
-				color: #3388FF;
-				background-color: #F2F2F2;
+      &.active {
+        color: #3388ff;
+        background-color: #f2f2f2;
         font-weight: bold;
-			}
-		}
-		.nav-item {
-			a {
+      }
+    }
+    .nav-item {
+      a {
         display: block;
         height: 40px;
         line-height: 40px;
@@ -123,19 +142,19 @@ export default {
         white-space: nowrap;
         text-overflow: ellipsis;
         padding-left: 44px;
-				&:hover {
-					color: #3388FF;
-          background-color: #F2F2F2;
-				}
-			}
-		}
-	}
-	.nav-group__title {
-		font-size: 12px;
-		color: #666;
-		padding-left: 28px;
-		line-height: 26px;
-		margin-top: 10px;
-	}
+        &:hover {
+          color: #3388ff;
+          background-color: #f2f2f2;
+        }
+      }
+    }
+  }
+  .nav-group__title {
+    font-size: 12px;
+    color: #666;
+    padding-left: 28px;
+    line-height: 26px;
+    margin-top: 10px;
+  }
 }
 </style>

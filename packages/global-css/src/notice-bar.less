@@ -1,0 +1,41 @@
+@import "common/config";
+
+.global-notice-bar {
+  display: flex;
+  background: rgba(255,238,188,1);
+  padding:10px;
+  color:#f60;
+  font-size: 16px;
+  .content {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    p{
+      position: absolute;
+      top:0px;
+      left:0;
+      width: auto;
+      min-width: 100%;
+      word-break: keep-all;
+      white-space: nowrap;
+      animation: global-translateX linear infinite;
+      font-size: 12px;
+      backface-visibility: hidden;
+      perspective: 1000;
+    }
+
+  }
+}
+
+@keyframes global-translateX {
+  0% {
+    //left:100%;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    //left:-100%;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+}

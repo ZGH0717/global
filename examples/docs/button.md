@@ -2,16 +2,16 @@
 
 ### 使用指南
 ```html
-import { Button } from 'iv';
+import { Button } from 'global-vue';
 
 Vue.use(Button);
 
 ```
 ### 基本用法
 ```html
-<i-button size="btn-lg" type="btn-primary-color">
+<global-button size="btn-lg" type="btn-primary-color">
   确认
-</i-button>
+</global-button>
 ```
 ### Attributes
 

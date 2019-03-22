@@ -2,14 +2,14 @@
 
 ### 使用指南
 ```html
-import { Tag } from 'iv';
+import { Tag } from 'global-vue';
 
 Vue.use(Tag);
 
 ```
 ### 基本用法
 ```html
-<i-tag type="tag-default">确认</i-tag>
+<global-tag type="tag-default">确认</global-tag>
 ```
 ### Attributes
 

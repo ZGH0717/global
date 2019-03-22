@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Confirm } from 'iv';
+import { Confirm } from 'global-vue';
 Vue.prototype.$confirm = Confirm
 
 ```

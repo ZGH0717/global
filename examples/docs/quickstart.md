@@ -1,11 +1,11 @@
-## iv
+## global-vue
 
 一套基于 `Vue 2.0` 的移动端 `UI` 组件。
 
 ### 安装
 
 ```shell
-npm i iv -S
+npm i global-vue -S
 ```
 
 ### 引入组件
@@ -14,10 +14,10 @@ npm i iv -S
 
 ```javascript
 import Vue from 'vue'
-import iv from 'iv'
-import 'iv/lib/iv-css/index.css';
+import global-vue from 'global-vue'
+import 'global-vue/lib/global-css/index.css';
 
-Vue.use(iv)
+Vue.use(global-vue)
 ```
 
 #### 部分引入
@@ -27,8 +27,8 @@ import Vue from 'vue'
 import {
   Cell
   // ...
-} from 'iv'
-import 'iv/lib/iv-css/cell.css';
+} from 'global-vue'
+import 'global-vue/lib/global-css/cell.css';
 
 Vue.use(Cell)
 ```
@@ -43,7 +43,7 @@ import {
   Alert,
   Toast
   // ...
-} from 'iv';
+} from 'global-vue';
 
 Vue.prototype.$toast = Toast
 Vue.prototype.$alert = Alert

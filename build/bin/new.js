@@ -66,7 +66,7 @@ export default {
 </script>`
   },
   {
-    filename: `iv-css/src/${componentname}.css`,
+    filename: `global-css/src/${componentname}.css`,
     content: `.v-${componentname} {
 
 }`

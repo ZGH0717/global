@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Checkbox } from 'iv';
+import { Checkbox } from 'global-vue';
 Vue.use(Checkbox);
 
 ```
@@ -10,10 +10,10 @@ Vue.use(Checkbox);
 
 ```html
 <template>
-  <i-checkbox v-model="selectValue" :list="list" key-name="city" value-name="id" type="button" iconfont="&#xe756;">
-  </i-checkbox>
-  <i-checkbox v-model="selectValue" :list="list" key-name="city" value-name="id" type="cell" iconfont="&#xe756;">
-  </i-checkbox>
+  <global-checkbox v-model="selectValue" :list="list" key-name="city" value-name="id" type="button" iconfont="&#xe756;">
+  </global-checkbox>
+  <global-checkbox v-model="selectValue" :list="list" key-name="city" value-name="id" type="cell" iconfont="&#xe756;">
+  </global-checkbox>
 </template>
 
 <script>

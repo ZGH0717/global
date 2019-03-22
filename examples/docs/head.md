@@ -2,25 +2,25 @@
 
 ### 使用指南
 ```html
-import { Head } from 'iv';
+import { Head } from 'global-vue';
 Vue.use(Head);
 
 ```
 ### 基本用法 slot插槽
 ```html
-<i-head :is-back="false" class="middle_before">
-  <button class="iconL colorf" slot="iconL">iconL</button>
-  <div slot="title" class="middle colorf">title</div>
-  <button class="iconR colorf" slot="iconR">iconR</button>
-</i-head>
+<global-head :is-back="false" class="middle-box">
+  <button class="iconL color-f" slot="iconL">iconL</button>
+  <div slot="title" class="middle color-f">title</div>
+  <button class="iconR color-f" slot="iconR">iconR</button>
+</global-head>
 ```
 ### 和Search组件一起使用
 ```html
 <template>
-<i-head class="middle_before" :is-back="false">
-   <i-search class="middle" slot="title" v-model="searchval" cls="radius34" v-on:click="searchHandle" placeholder="请输入内容">
-   </i-search>
-</i-head>
+<global-head class="middle-box" :is-back="false">
+   <global-search class="middle" slot="title" v-model="searchval" cls="radius34" v-on:click="searchHandle" placeholder="请输入内容">
+   </global-search>
+</global-head>
 </template>
 <script>
   export default {

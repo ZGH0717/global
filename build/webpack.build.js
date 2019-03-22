@@ -3,12 +3,12 @@ const webpack = require('webpack')
 const config = require('./webpack.base.conf')
 
 config.entry = {
-  'iv': './src/index.js'
+  'global-vue': './src/index.js'
 }
 
 config.output = {
   filename: './lib/[name].js',
-  library: 'iv',
+  library: 'global-vue',
   libraryTarget: 'umd'
 }
 

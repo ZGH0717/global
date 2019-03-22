@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Badge } from 'iv';
+import { Badge } from 'global-vue';
 
 Vue.use(Badge);
 
@@ -13,11 +13,11 @@ Vue.use(Badge);
 ```html
 <div stype="position:relative">
   消息
-  <i-badge :count="10" top="2" right="2"></i-badge>
+  <global-badge :count="10" top="2" right="2"></global-badge>
 </div>
 <div stype="position:relative">
   消息
-  <i-badge top="8" right="10"></i-badge>
+  <global-badge top="8" right="10"></global-badge>
 </div>
 
 ```

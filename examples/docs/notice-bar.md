@@ -2,36 +2,36 @@
 
 ### 使用指南
 ```html
-import { NoticeBar } from 'iv';
+import { NoticeBar } from 'global-vue';
 
 Vue.use(NoticeBar);
 
 ```
 ### 无插槽 速度根据内容自适应
 ```html
-  <i-notice-bar content="无icon"></i-notice-bar>
+  <global-notice-bar content="无icon"></global-notice-bar>
 ```
 
 ### 有左插槽（icon） 速度5
 ```html
-  <i-notice-bar :seed="5" content="有左icon">
+  <global-notice-bar :seed="5" content="有左icon">
     <i class="iconfont" slot="iconL">&#xe756;</i>
-  </i-notice-bar>
+  </global-notice-bar>
 ```
 
 ### 有右插槽（icon） 速度10
 ```html
-  <i-notice-bar :seed="10" content="有右icon">
+  <global-notice-bar :seed="10" content="有右icon">
     <i class="iconfont" slot="iconR">&#xe6a7;</i>
-  </i-notice-bar>
+  </global-notice-bar>
 ```
 
 ### 有左右插槽（icon） 速度15
 ```html
-  <i-notice-bar :seed="15" content="有左右icon">
+  <global-notice-bar :seed="15" content="有左右icon">
     <i class="iconfont" slot="iconL">&#xe756;</i>
     <i class="iconfont" slot="iconR">&#xe6a7;</i>
-  </i-notice-bar>
+  </global-notice-bar>
 ```
 ### Attributes
 

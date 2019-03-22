@@ -2,14 +2,18 @@
   <div class="page-header">
     <div class="page-header__top">
       <h1 class="page-header__logo">
-        <a href="#">iv</a>
+        <a href="#">global-vue</a>
       </h1>
       <ul class="page-header__navs">
         <li class="page-header__item">
           <a href="/" class="page-header__link">组件</a>
         </li>
         <li class="page-header__item">
-          <a href="https://github.com/Brickies/iv" class="page-header__github" target="_blank"></a>
+          <a
+            href="https://github.com/Brickies/global-vue"
+            class="page-header__github"
+            target="_blank"
+          ></a>
         </li>
         <li class="page-header__item">
           <span class="page-header__link"></span>
@@ -31,9 +35,10 @@ export default {
   mounted() {
     const _this = this;
     let timer;
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       clearTimeout(timer);
-      const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+      const scrollTop =
+        document.body.scrollTop || document.documentElement.scrollTop;
       timer = setTimeout(() => {
         _this.scrollTop = scrollTop;
       }, 500);
@@ -93,7 +98,7 @@ export default {
       z-index: -1;
 
       @m shadow {
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
       }
 
       a,
@@ -110,11 +115,11 @@ export default {
       margin: 0 20px;
 
       &:hover {
-        color: #3388FF;
+        color: #3388ff;
       }
 
       @m active {
-        color: #3388FF;
+        color: #3388ff;
       }
     }
 

@@ -2,20 +2,20 @@
 
 ### 使用指南
 ```html
-import { Loading } from 'iv';
+import { Loading } from 'global-vue';
 Vue.use(Loading);
 
 ```
 ### 基本用法
 配合Button组件 一起使用
 ```html
-<i-loading :size="40" color="#db2227"></i-loading>
+<global-loading :size="40" color="#db2227"></global-loading>
 
 ```
 ### 居中用法
 ```html
 
-<i-loading position="center" class="absoluteCC" color="#db2227"></i-loading>
+<global-loading position="center" class="absoluteCC" color="#db2227"></global-loading>
 
 ```
 ### Attributes

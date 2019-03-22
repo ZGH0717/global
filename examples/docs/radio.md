@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Radio } from 'iv';
+import { Radio } from 'global-vue';
 Vue.use(Radio);
 
 ```
@@ -10,10 +10,10 @@ Vue.use(Radio);
 
 ```html
 <template>
-  <i-radio v-model="selectValue" :list="list" key-name="city" value-name="id" type="button" iconfont="&#xe756;">
-  </i-radio>
-  <i-radio v-model="selectValue" :list="list" key-name="city" value-name="id" type="cell" iconfont="&#xe756;">
-  </i-radio>
+  <global-radio v-model="selectValue" :list="list" key-name="city" value-name="id" type="button" iconfont="&#xe756;">
+  </global-radio>
+  <global-radio v-model="selectValue" :list="list" key-name="city" value-name="id" type="cell" iconfont="&#xe756;">
+  </global-radio>
 </template>
 
 <script>

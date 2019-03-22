@@ -1,8 +1,8 @@
-import Number from './main'
+import Number from "./main";
 
 /* istanbul ignore next */
-Number.install = function (Vue) {
-  Vue.component(Number.name, Number)
-}
+Number.install = function(Vue) {
+  Vue.component(Number.name, Number);
+};
 
-export default Number
+export default Number;

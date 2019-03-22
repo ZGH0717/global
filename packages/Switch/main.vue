@@ -1,5 +1,5 @@
 <template>
-  <div class="i-switch" :class="{active:currentValue}" @click="Handle">
+  <div class="global-switch" :class="{ active: currentValue }" @click="Handle">
     <slot></slot>
     <div class="switch">
       <span class="bar"></span>
@@ -9,32 +9,32 @@
 </template>
 
 <script>
-  export default {
-    name: 'ISwitch',
-    props: {
-      value: {
-        type: Boolean,
-        default: false
-      }
+export default {
+  name: "GlobalSwitch",
+  props: {
+    value: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data() {
+    return {
+      currentValue: this.value
+    };
+  },
+  watch: {
+    currentValue(val) {
+      this.$emit("input", val);
+      this.$emit("change", val);
     },
-    data() {
-      return {
-        currentValue: this.value,
-      }
-    },
-    watch: {
-      currentValue(val) {
-        this.$emit('input', val);
-        this.$emit('change', val);
-      },
-      value() {
-        this.currentValue = this.value;
-      }
-    },
-    methods:{
-      Handle(){
-        this.$emit('click')
-      }
+    value() {
+      this.currentValue = this.value;
+    }
+  },
+  methods: {
+    Handle() {
+      this.$emit("click");
     }
   }
+};
 </script>

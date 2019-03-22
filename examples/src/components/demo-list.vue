@@ -1,11 +1,16 @@
 <template>
   <div class="side-nav">
-    <!--<h1 class="iv-title"></h1>-->
-    <h2 class="iv-desc">iv 移动组件库</h2>
+    <!--<h1 class="global-title"></h1>-->
+    <h2 class="global-desc">global-vue 移动组件库</h2>
     <div class="mobile-navs">
       <div v-for="(item, index) in data" :key="index">
         <div class="mobile-nav-item" v-if="item.showInMobile">
-          <mobile-nav v-for="(group, s) in item.groups" :group="group" :base="base" :key="s"></mobile-nav>
+          <mobile-nav
+            v-for="(group, s) in item.groups"
+            :group="group"
+            :base="base"
+            :key="s"
+          ></mobile-nav>
         </div>
       </div>
     </div>
@@ -13,14 +18,14 @@
 </template>
 
 <script>
-import navConfig from '../nav.config.json';
-import MobileNav from './mobile-nav';
+import navConfig from "../nav.config.json";
+import MobileNav from "./mobile-nav";
 
 export default {
   data() {
     return {
-      data: navConfig['zh-CN'],
-      base: '/component'
+      data: navConfig["zh-CN"],
+      base: "/component"
     };
   },
 
@@ -38,14 +43,14 @@ export default {
   position: relative;
   z-index: 1;
 
-  .iv-title,
-  .iv-desc {
+  .global-title,
+  .global-desc {
     text-align: center;
     font-weight: normal;
     user-select: none;
   }
 
-  .iv-title {
+  .global-title {
     padding-top: 40px;
     height: 0;
     overflow: hidden;
@@ -53,7 +58,7 @@ export default {
     margin-bottom: 10px;
   }
 
-  .iv-desc {
+  .global-desc {
     font-size: 14px;
     color: #666;
     margin-bottom: 50px;

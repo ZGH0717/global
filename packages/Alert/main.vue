@@ -1,11 +1,16 @@
 <template>
   <div class="propBox">
-    <transition name="iv-popup">
-      <div class="pdT30   pdL15 pdR15 alert  bgf" ref="prop" v-show="visible">
+    <transition name="global-popup">
+      <div class="pt-30 pl-15 pr-15 alert bg-f" ref="prop" v-show="visible">
         <slot>
-          <div class="color3 pdL15 pdR15 fs16" style="word-wrap: break-word">{{message}}</div>
-          <div class="textC m-fs34 mgT10 ">
-            <button class=" center-block w100 pd15 middle common-color textR" @click="handleSure">
+          <div class="color-3  pl-15 pr-15 fs-16" style="word-wrap: break-word">
+            {{ message }}
+          </div>
+          <div class="text-center m-fs-34 mt-10 ">
+            <button
+              class=" center-block w100 pd-15 middle common-color text-right"
+              @click="handleSure"
+            >
               <span class="middle">确定</span>
             </button>
           </div>
@@ -13,54 +18,49 @@
         <div v-if="isClose" class="close" @click="_close"></div>
       </div>
     </transition>
-    <transition name="iv-opcity">
+    <transition name="global-opcity">
       <div class="mask" v-show="visible" @click="maskHandle"></div>
     </transition>
   </div>
-
 </template>
 
 <script>
-  export default {
-    name: 'IAlert',
-    data() {
-      return {
-        isClose: false,
-        message: '',
-        isMaskClick: false,
-        visible: false,
-        onHide: () => {
-        },
-        onConfirm: () => {
-          this._close()
-        }
+export default {
+  name: "global-Alert",
+  data() {
+    return {
+      isClose: false,
+      message: "",
+      isMaskClick: false,
+      visible: false,
+      onHide: () => {},
+      onConfirm: () => {
+        this._close();
       }
+    };
+  },
+  computed: {},
+  mounted() {},
+  methods: {
+    _show() {
+      this.visible = true;
     },
-    computed: {},
-    mounted() {
-
+    _close() {
+      this.visible = false;
     },
-    methods: {
-      _show() {
-        this.visible = true;
-      },
-      _close() {
-        this.visible = false;
-      },
-      maskHandle() {
-        if (!this.isMaskClick) return;
-        this._close()
-      },
-      handleSure() {
-        console.log(111)
-        this.onConfirm();
-      },
-      hide() {
-        this.onHide();
-      }
-    },
-    beforeDestory() {
+    maskHandle() {
+      if (!this.isMaskClick) return;
       this._close();
+    },
+    handleSure() {
+      this.onConfirm();
+    },
+    hide() {
+      this.onHide();
     }
+  },
+  beforeDestory() {
+    this._close();
   }
+};
 </script>

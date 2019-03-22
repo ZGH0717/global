@@ -2,13 +2,13 @@
 
 ### 使用指南
 ```html
-import { Number } from 'iv';
+import { Number } from 'global-vue';
 Vue.use(Number);
 
 ```
 ### 基本用法
 ```html
-  <i-number v-model="num2" :max="10" :min="1" :step="2"></i-number>
+  <global-number v-model="num2" :max="10" :min="1" :step="2"></global-number>
 ```
 ### Attributes
 

@@ -1,8 +1,8 @@
-import Foot from './main'
+import Foot from "./main";
 
 /* istanbul ignore next */
-Foot.install = function (Vue) {
-  Vue.component(Foot.name, Foot)
-}
+Foot.install = function(Vue) {
+  Vue.component(Foot.name, Foot);
+};
 
-export default Foot
+export default Foot;

@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Switch } from 'iv';
+import { Switch } from 'global-vue';
 
 Vue.use(Switch);
 
@@ -10,9 +10,9 @@ Vue.use(Switch);
 ### 基本用法
 ```html
 <template>
-  <i-switch class="pd15" v-model="taggleActive" v-on:click="clickHandle">
+  <global-switch class="pd15" v-model="taggleActive" v-on:click="clickHandle">
     开启夜间模式
-  </i-switch>
+  </global-switch>
 </template>
 
 <script>

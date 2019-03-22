@@ -182,7 +182,7 @@ OK，开始改造你初始化出来的项目的目录吧。
 ```shell
 ├── assets						css，图片等资源都在这
 ├── pages                     	路由中所有的页面
-├── src              	      	
+├── src
 │   ├── components            	demo中可以复用的模块放在这里面
 │   ├── index.js              	入口js
 │   ├── index.tpl              	页面入口
@@ -192,7 +192,7 @@ OK，开始改造你初始化出来的项目的目录吧。
 
 各个文件修改后的代码如下
 
-- `index.js` 
+- `index.js`
 
   ```javascript
   import Vue from 'vue'
@@ -306,7 +306,7 @@ OK，修改好了。重新执行一次 `npm run dev`，然后你的项目便能�
 为了有一个良好约束性，这里我们约束：一个组件在开始写之前，得有一个规定的目录及文件名进行统一管理。 `packages` 目录下 `hello` 组件下的文件如下
 
 ```shell
-├── hello						
+├── hello
 │   ├── hello.vue
 ```
 
@@ -365,9 +365,9 @@ const { Hello } = vui
 Vue.component(Hello.name, Hello)
 ```
 
-#### iv. 在 `examples/pages/hello.vue` 直接使用
+#### global-vue. 在 `examples/pages/hello.vue` 直接使用
 
-在 `examples/pages` 中我们需要建立和组件名同名的 demo 文件，并对组件进行使用 
+在 `examples/pages` 中我们需要建立和组件名同名的 demo 文件，并对组件进行使用
 
 ```html
 <v-hello message="my component library"></v-hello>
@@ -385,7 +385,7 @@ Vue.component(Hello.name, Hello)
 
 老规矩，章节正文开始之前，我们得清楚本章节需要做什么以及为什么这么做。
 
-1. 由于脚手架初始的项目对于 `build` 文件只有一个集中打包的文件 `webpack.prod.conf.js` 
+1. 由于脚手架初始的项目对于 `build` 文件只有一个集中打包的文件 `webpack.prod.conf.js`
 
 2. 为了之后我们的组件库能更好的使用起来，我们需要将组件库对应的模块抽离全部打包到 `vui.js` 一个文件中（名字你喜欢啥取啥），这样我们之后就能通过以下方式来引用我们得组件库了
 
@@ -462,7 +462,7 @@ const createLintingRule = () => ({
 })
 module.exports = {
   context: path.resolve(__dirname, '../'),
-  // 文件入口 
+  // 文件入口
   entry: {
     'vendor': ['vue', 'vue-router'],
     'vui': './examples/src/index.js'
@@ -805,7 +805,7 @@ npm publish
 
 ```shell
 npm i component-library-test
-# or 
+# or
 cnpm i component-library-test
 ```
 
@@ -849,7 +849,7 @@ Vue.use(vui)
 这里，我们将会把所有的 css 文件都存放到 `packages/vui-css` 目录下，具体结构如下
 
 ```shell
-├── src              	
+├── src
 │   ├── common         		存放组件公用的css文件
 │   ├── mixins				存放一些mixin的css文件
 │   ├── index.css			css主入口文件
@@ -1372,7 +1372,7 @@ hello.vue
 ├── dist                    打包好的文件都在这
 ├── docs                    PC端需要展示的markdown文件都在这
 ├── pages                   移动端所有的demo都在这
-├── src              	      	
+├── src
 │   ├── components          demo中可以复用的模块放在这里面
 │   ├── index.tpl           页面入口
 │   ├── is-mobile.js        判断设备
@@ -1537,7 +1537,7 @@ function wrap (render) {
 }
 ```
 
-然后，重新访问 [localhost:8080/#/component/hello]() 
+然后，重新访问 [localhost:8080/#/component/hello]()
 
 ![markdown](https://static.oschina.net/uploads/img/201803/17175428_QlRI.png "markdown 高亮预览")
 
@@ -1600,7 +1600,7 @@ const isMobile = (function () {
 export default isMobile
 ```
 
-第二步，在 PC 端 js 入口文件 `examples/src/index.js` 中写入以下判定规则 
+第二步，在 PC 端 js 入口文件 `examples/src/index.js` 中写入以下判定规则
 
 ```javascript
 import isMobile from './is-mobile'
@@ -1892,7 +1892,7 @@ const router = new VueRouter({
 </li>
 ```
 
-完整代码点这里 [side-nav.vue](https://github.com/xuqiang521/personal-component-library/blob/master/examples/src/components/side-nav.vue) 
+完整代码点这里 [side-nav.vue](https://github.com/xuqiang521/personal-component-library/blob/master/examples/src/components/side-nav.vue)
 
 #### iii. App.vue
 

@@ -15,9 +15,9 @@ then
   # build
   VERSION=$VERSION npm run dist
 
-  # publish iv-css
-  echo "Releasing iv-css $VERSION ..."
-  cd packages/iv-css
+  # publish global-css
+  echo "Releasing global-css $VERSION ..."
+  cd packages/global-css
   npm version $VERSION --message "[release] $VERSION"
   npm publish
   cd ../..

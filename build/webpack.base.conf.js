@@ -28,18 +28,19 @@ const createLintingRule = () => ({
   test: /\.(js|vue)$/,
   loader: 'eslint-loader',
   enforce: 'pre',
-  include: [resolve('src'), resolve('test')],
+  include: [resolve('src'), resolve('test'),resolve('examples'),resolve('packages')],
   options: {
     formatter: require('eslint-friendly-formatter'),
-    emitWarning: !config.dev.showEslintErrorsInOverlay
+    emitWarning: !config.dev.showEslintErrorsInOverlay,
+    fix: true
   }
 })
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
     'vendor': ['vue', 'vue-router'],
-    'iv': './examples/src/index.js',
-    'iv-mobile': './examples/src/mobile.js'
+    'global-vue': './examples/src/index.js',
+    'global-mobile': './examples/src/mobile.js'
   },
   output: {
     path: path.join(__dirname, '../examples/dist'),
@@ -64,18 +65,6 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
-        // options: {
-        //   loaders: {
-        //     css: ExtractTextPlugin.extract({
-        //       use: 'css-loader',
-        //       use: [
-        //         { loader: 'css-loader', options: { sourceMap: true } },
-        //         { loader: 'postcss-loader', options: { sourceMap: true } }
-        //       ],
-        //       fallback: 'vue-style-loader'
-        //     })
-        //   }
-        // }
       },
       {
         test: /\.js$/,
@@ -171,13 +160,13 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      chunks: ['manifest', 'vendor', 'iv'],
+      chunks: ['manifest', 'vendor', 'global-vue'],
       template: 'examples/src/index.tpl',
       filename: 'index.html',
       inject: true
     }),
     new HtmlWebpackPlugin({
-      chunks: ['manifest', 'vendor', 'iv-mobile'],
+      chunks: ['manifest', 'vendor', 'global-mobile'],
       template: 'examples/src/index.tpl',
       filename: 'mobile.html',
       inject: true

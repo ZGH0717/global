@@ -18,7 +18,7 @@ const testPath = path.resolve(__dirname, '../../test/unit/specs')
 const files = {
   page_file: `examples/pages/${componentname}.vue`,
   md_file: `examples/docs/${componentname}.md`,
-  css_file: `packages/iv-css/src/${componentname}.css`,
+  css_file: `packages/global-css/src/${componentname}.css`,
   test_file: `test/unit/specs/${componentname}.spec.js`
 }
 

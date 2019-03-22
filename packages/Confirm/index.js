@@ -1,31 +1,19 @@
-import Vue from 'vue';
-import Main from './main.vue';
+import Vue from "vue";
+import Main from "./main.vue";
 
-var ConfirmConstructor = Vue.extend(Main);
-var instance;
-var defaults = {
-  message: '消息',
-  isMaskClick: false,
-  visible: false,
-  styles: {},
-  onHide: function () {
-  },
-  onShow: function () {
-  },
-  content: '',
-  isInput: false
-};
-var Confirm = function (options) {
+let ConfirmConstructor = Vue.extend(Main);
+let instance;
+let Confirm = function(options) {
   if (Vue.prototype.$isServer) return;
   options = options || {};
-  if (typeof options === 'string') {
+  if (typeof options === "string") {
     options = {
       message: options
     };
   }
   if (instance) {
-    for (var i in options) {
-      instance.vm[i] = options[i]
+    for (let i in options) {
+      instance.vm[i] = options[i];
     }
 
     instance.vm.visible = true;
@@ -38,9 +26,9 @@ var Confirm = function (options) {
   document.body.appendChild(instance.vm.$el);
   instance.vm.visible = true;
   instance.dom = instance.vm.$el;
-  Confirm.close = function () {
+  Confirm.close = function() {
     instance.vm.visible = false;
-    instance.vm.isInput=false
+    instance.vm.isInput = false;
   };
   return instance.vm;
 };

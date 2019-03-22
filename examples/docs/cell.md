@@ -2,22 +2,22 @@
 
 ### 使用指南
 ```html
-import { Cell } from 'iv';
+import { Cell } from 'global-vue';
 
 Vue.use(Cell);
 
 ```
 ### 基本用法
 ```html
-<i-cell>
+<global-cell>
   内容
-</i-cell>
+</global-cell>
 ```
 ### 显示右边小箭头
 ```html
-<i-cell is-arrow>
+<global-cell is-arrow>
   内容
-</i-cell>
+</global-cell>
 ```
 ### Attributes
 

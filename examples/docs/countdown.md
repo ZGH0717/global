@@ -2,13 +2,13 @@
 
 ### 使用指南
 ```html
-import { Countdown } from 'iv';
+import { Countdown } from 'global-vue';
 Vue.use(Countdown);
 
 ```
 ### 基本用法
 ```html
- <i-countdown :remain-time="50000"></i-countdown>
+ <global-countdown :remain-time="50000"></global-countdown>
 ```
 ### Attributes
 

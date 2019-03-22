@@ -1,8 +1,8 @@
-import PullRefresh from './main'
+import PullRefresh from "./main";
 
 /* istanbul ignore next */
-PullRefresh.install = function (Vue) {
-  Vue.component(PullRefresh.name, PullRefresh)
+PullRefresh.install = function(Vue) {
+  Vue.component(PullRefresh.name, PullRefresh);
 };
 
-export default PullRefresh
+export default PullRefresh;

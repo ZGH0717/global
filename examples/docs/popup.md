@@ -2,34 +2,34 @@
 
 ### 使用指南
 ```html
-import { Popup } from 'iv';
+import { Popup } from 'global-vue';
 Vue.use(Popup)
 
 ```
 ### 默认弹出
 
 ```html
-  <i-popup v-model="active">
+  <global-popup v-model="active">
     内容内容呢
-  </i-popup>
+  </global-popup>
 ```
 ### 弹出位置
 
 ```html
 <template>
-  <i-popup v-model="active2" position="bottom">
-    <div class="bgf textC">
-      <i-cell v-on:click="showAlert('微信')">
+  <global-popup v-model="active2" position="bottom">
+    <div class="bg-f text-center">
+      <global-cell v-on:click="showAlert('微信')">
         微信
-      </i-cell>
-      <i-cell v-on:click="showAlert('支付宝')">
+      </global-cell>
+      <global-cell v-on:click="showAlert('支付宝')">
         支付宝
-      </i-cell>
-      <i-cell v-on:click="showAlert('取消')">
+      </global-cell>
+      <global-cell v-on:click="showAlert('取消')">
         取消
-      </i-cell>
+      </global-cell>
     </div>
-  </i-popup>
+  </global-popup>
 </template>
 <script>
   export default {

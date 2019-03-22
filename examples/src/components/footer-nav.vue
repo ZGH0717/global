@@ -4,21 +4,23 @@
       href="javascript:void(0)"
       v-if="leftNav"
       class="footer-nav__link footer-nav__left"
-      @click="handleNavClick('prev')">
-      <span>< {{ leftNav.title }}</span>
+      @click="handleNavClick('prev')"
+    >
+      <span>{{ leftNav.title }}</span>
     </a>
     <a
       href="javascript:void(0)"
       v-if="rightNav"
       class="footer-nav__link footer-nav__right"
-      @click="handleNavClick('next')">
+      @click="handleNavClick('next')"
+    >
       <span>{{ rightNav.title }} ></span>
     </a>
   </div>
 </template>
 
 <script>
-import navConfig from '../nav.config.json';
+import navConfig from "../nav.config.json";
 
 export default {
   data() {
@@ -31,7 +33,7 @@ export default {
   },
 
   watch: {
-    '$route.path'() {
+    "$route.path"() {
       this.setNav();
       this.updateNav();
     }
@@ -39,7 +41,7 @@ export default {
 
   methods: {
     setNav() {
-      let nav = navConfig['zh-CN'];
+      let nav = navConfig["zh-CN"];
       for (let i = 0; i < nav.length; i++) {
         let navItem = nav[i];
         if (!navItem.groups) {
@@ -53,7 +55,7 @@ export default {
     },
 
     updateNav() {
-      let baseUrl = '/component';
+      let baseUrl = "/component";
       let currentIndex;
 
       this.currentPath = this.$route.path.slice(baseUrl.length);
@@ -69,7 +71,11 @@ export default {
     },
 
     handleNavClick(direction) {
-      this.$router.push(`/component${ direction === 'prev' ? this.leftNav.path : this.rightNav.path }`);
+      this.$router.push(
+        `/component${
+          direction === "prev" ? this.leftNav.path : this.rightNav.path
+        }`
+      );
     }
   },
 

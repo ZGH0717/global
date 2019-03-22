@@ -2,14 +2,14 @@
 
 ### 使用指南
 ```html
-import { Search } from 'iv';
+import { Search } from 'global-vue';
 
 Vue.use(Search);
 
 ```
 ### 基本用法
 ```html
- <i-search v-model="value1" cls="radius34" v-on:click="searchHandle" placeholder="请输入内容"></i-search>
+ <global-search v-model="value1" cls="radius34" v-on:click="searchHandle" placeholder="请输入内容"></global-search>
 ```
 
 ### Attributes

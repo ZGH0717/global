@@ -1,8 +1,8 @@
-import Popup from './main'
+import Popup from "./main";
 
 /* istanbul ignore next */
-Popup.install = function (Vue) {
-  Vue.component(Popup.name, Popup)
+Popup.install = function(Vue) {
+  Vue.component(Popup.name, Popup);
 };
 
-export default Popup
+export default Popup;

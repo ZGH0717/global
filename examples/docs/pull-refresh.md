@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { PullRefresh } from 'iv';
+import { PullRefresh } from 'global-vue';
 Vue.use(PullRefresh)
 
 ```
@@ -10,9 +10,9 @@ Vue.use(PullRefresh)
 
 ```html
 <template>
-  <i-pull-refresh v-model="loading" v-on:refresh="update" v-on:load="loadMore">
+  <global-pull-refresh v-model="loading" v-on:refresh="update" v-on:load="loadMore">
     内容。。。。。
-  </i-pull-refresh>
+  </global-pull-refresh>
 </template>
 <script>
   export default {

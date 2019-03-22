@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Alert } from 'iv';
+import { Alert } from 'global-vue';
 Vue.prototype.$alert = Alert
 
 ```
@@ -35,5 +35,5 @@ this.$alert.close()
 | message  | 提示内容    | string   | — | — |
 | isMaskClick  | 点击遮罩是否关闭弹窗    | Boolean   | — | — |
 | onConfirm  | 点击确认时触发    | Function   | — | — |
-| onShow  | 显示时触发    | Function   | — | — |
+| onHide  | 隐藏时触发    | Function   | — | — |
 
