@@ -8,13 +8,13 @@
         <li class="page-header__item">
           <a href="/" class="page-header__link">组件</a>
         </li>
-        <li class="page-header__item">
-          <a
-            href="https://github.com/Brickies/global-vue"
-            class="page-header__github"
-            target="_blank"
-          ></a>
-        </li>
+        <!--<li class="page-header__item">-->
+        <!--<a-->
+        <!--href="https://github.com/Brickies/global-vue"-->
+        <!--class="page-header__github"-->
+        <!--target="_blank"-->
+        <!--&gt;</a>-->
+        <!--</li>-->
         <li class="page-header__item">
           <span class="page-header__link"></span>
         </li>

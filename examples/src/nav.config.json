@@ -1,23 +1,6 @@
 {
   "zh-CN": [
     {
-      "name": "开发指南",
-      "groups": [
-        {
-          "list": [
-            {
-              "path": "/intro",
-              "title": "项目介绍"
-            },
-            {
-              "path": "/quickstart",
-              "title": "快速上手"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "global-vue 组件",
       "showInMobile": true,
       "groups": [
