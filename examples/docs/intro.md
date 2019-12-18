@@ -2,7 +2,7 @@
   <div class="vui-intro__logo" >
     <img src="//raw.githubusercontent.com/xuqiang521/vui/master/src/assets/logo.png">
   </div>
-  <h1 class="vui-intro__title">global-vue</h1>
+  <h1 class="vui-intro__title">hua-ui</h1>
   <p class="vui-intro__subtitle">一套基于 Vue 2.0 的移动端 UI 组件库</p>
 </div>
 

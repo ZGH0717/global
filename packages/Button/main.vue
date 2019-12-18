@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "GlobalButton",
+  name: "HuaButton",
   props: {
     size: {
       type: String,

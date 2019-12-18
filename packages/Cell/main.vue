@@ -1,8 +1,8 @@
 <template>
-  <div class="btn global-cell borderB" @click="handle">
+  <div class="btn hua-cell borderB" @click="handle">
     <slot></slot>
     <div v-if="isArrow" class="iconR">
-      <span class="global-arrow" :class="{ active: isActive }">
+      <span class="hua-arrow" :class="{ active: isActive }">
         <slot name="iconR">
           <i class="iconfont ">&#xe6a7;</i>
         </slot>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "GlobalCell",
+  name: "HuaCell",
   props: {
     isArrow: {
       type: Boolean,

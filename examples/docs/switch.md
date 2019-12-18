@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Switch } from 'global-vue';
+import { Switch } from 'hua-ui';
 
 Vue.use(Switch);
 
@@ -10,9 +10,9 @@ Vue.use(Switch);
 ### 基本用法
 ```html
 <template>
-  <global-switch class="pd15" v-model="taggleActive" v-on:click="clickHandle">
+  <hua-switch class="pd15" v-model="taggleActive" v-on:click="clickHandle">
     开启夜间模式
-  </global-switch>
+  </hua-switch>
 </template>
 
 <script>

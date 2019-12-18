@@ -2,22 +2,22 @@
 
 ### 使用指南
 ```html
-import { Cell } from 'global-vue';
+import { Cell } from 'hua-ui';
 
 Vue.use(Cell);
 
 ```
 ### 基本用法
 ```html
-<global-cell>
+<hua-cell>
   内容
-</global-cell>
+</hua-cell>
 ```
 ### 显示右边小箭头
 ```html
-<global-cell is-arrow>
+<hua-cell is-arrow>
   内容
-</global-cell>
+</hua-cell>
 ```
 ### Attributes
 

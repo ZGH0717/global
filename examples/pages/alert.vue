@@ -1,19 +1,19 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox">
-      <global-cell>
+      <hua-cell>
         普通弹出提示
-        <global-button size="btn-lg" type="btn-primary" v-on:click="showAlert"
-          >提示</global-button
+        <hua-button size="btn-lg" type="btn-primary" v-on:click="showAlert"
+          >提示</hua-button
         >
-      </global-cell>
-      <global-cell>
+      </hua-cell>
+      <hua-cell>
         调用点击确认后触发函数
-        <global-button size="btn-lg" type="btn-primary" v-on:click="showAlert1"
-          >提示</global-button
+        <hua-button size="btn-lg" type="btn-primary" v-on:click="showAlert1"
+          >提示</hua-button
         >
-      </global-cell>
+      </hua-cell>
     </div>
   </div>
 </template>

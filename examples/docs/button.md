@@ -2,16 +2,16 @@
 
 ### 使用指南
 ```html
-import { Button } from 'global-vue';
+import { Button } from 'hua-ui';
 
 Vue.use(Button);
 
 ```
 ### 基本用法
 ```html
-<global-button size="btn-lg" type="btn-primary-color">
+<hua-button size="btn-lg" type="btn-primary-color">
   确认
-</global-button>
+</hua-button>
 ```
 ### Attributes
 

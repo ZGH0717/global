@@ -1,37 +1,37 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox ">
       <div class="pt-20">
-        <global-search
+        <hua-search
           v-model="value1"
           cls=" radius-35"
           v-on:click="searchHandle"
           placeholder="请输入内容"
-        ></global-search>
+        ></hua-search>
       </div>
       <div class="pt-20">
-        <global-search
+        <hua-search
           v-model="value2"
           cls=" radius-5"
           v-on:click="searchHandle"
           placeholder="请输入"
-        ></global-search>
+        ></hua-search>
       </div>
       <div class="pt-20">
-        <global-search
+        <hua-search
           v-model="value3"
           cls="radius-15"
           v-on:click="searchHandle"
           placeholder="请输入搜索"
-        ></global-search>
+        ></hua-search>
       </div>
       <div class="pt-20">
-        <global-search
+        <hua-search
           v-model="value4"
           v-on:click="searchHandle"
           placeholder="请输入兑换码"
-        ></global-search>
+        ></hua-search>
       </div>
     </div>
   </div>

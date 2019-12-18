@@ -29,7 +29,7 @@
 import circleRipple from "./circleRipple";
 
 export default {
-  name: "GlobalTouchRipple",
+  name: "HuaTouchRipple",
   props: {
     // 是否从中间扩散，设为false会从点击处扩散
     centerRipple: {

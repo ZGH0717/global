@@ -1,6 +1,6 @@
 <template>
   <div class="propBox">
-    <transition name="global-popup">
+    <transition name="hua-popup">
       <div
         class="pt-30 pl-15 pr-15  confirm  bg-f"
         ref="prop"
@@ -47,7 +47,7 @@
         </slot>
       </div>
     </transition>
-    <transition name="global-opcity">
+    <transition name="hua-opcity">
       <div class="mask" v-show="visible" @click="maskHandle"></div>
     </transition>
   </div>
@@ -55,7 +55,7 @@
 
 <script>
 export default {
-  name: "GlobalConfirm",
+  name: "HuaConfirm",
   data() {
     return {
       message: "消息",

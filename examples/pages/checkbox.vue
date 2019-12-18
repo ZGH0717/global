@@ -1,6 +1,6 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox fs-14">
       <div class="pd-15">
         <span class="color-3"> 所选择的城市：</span>
@@ -13,7 +13,7 @@
         </span>
       </div>
       <div class="pd-15">
-        <global-checkbox
+        <hua-checkbox
           v-model="selectValue"
           :list="list"
           key-name="city"
@@ -21,9 +21,9 @@
           type="button"
           iconfont="&#xe756;"
         >
-        </global-checkbox>
+        </hua-checkbox>
       </div>
-      <global-checkbox
+      <hua-checkbox
         v-model="selectValue"
         :list="list"
         key-name="city"
@@ -31,7 +31,7 @@
         type="cell"
         iconfont="&#xe756;"
       >
-      </global-checkbox>
+      </hua-checkbox>
     </div>
   </div>
 </template>

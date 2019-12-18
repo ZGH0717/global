@@ -1,9 +1,9 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox fs-14">
       <div class="pd-15">
-        <global-radio
+        <hua-radio
           v-model="selectValue"
           :list="list"
           key-name="city"
@@ -11,10 +11,10 @@
           type="button"
           iconfont="&#xe756;"
         >
-        </global-radio>
+        </hua-radio>
       </div>
 
-      <global-radio
+      <hua-radio
         v-model="selectValue"
         :list="list"
         key-name="city"
@@ -22,7 +22,7 @@
         type="cell"
         iconfont="&#xe756;"
       >
-      </global-radio>
+      </hua-radio>
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="global-number middle">
+  <div class="hua-number middle">
     <span
       @click="minusHandle"
       :class="currentValue == currentMin ? 'disable' : ''"
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "GlobalNumber",
+  name: "HuaNumber",
   props: {
     value: {
       type: Number,

@@ -1,6 +1,6 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox text-center ">
       <div
         class="relative clearfix bg-f mt-15 pd-15 fs-12 color-6"
@@ -11,7 +11,7 @@
           <div><span class="font-bold color-0">type：</span>{{ item }}</div>
         </div>
         <div class="absoluteRC" style="right:15px;">
-          <global-tag :type="item">确认</global-tag>
+          <hua-tag :type="item">确认</hua-tag>
         </div>
       </div>
     </div>

@@ -1,15 +1,15 @@
 <template>
   <div>
-    <transition :name="position ? 'global-popup-' + position : 'global-popup'">
+    <transition :name="position ? 'hua-popup-' + position : 'hua-popup'">
       <div
-        :class="[position ? 'global-popup-' + position : 'global-popup']"
+        :class="[position ? 'hua-popup-' + position : 'hua-popup']"
         v-show="currentActive"
       >
         <slot></slot>
         <div class="close" @click="hideProp"></div>
       </div>
     </transition>
-    <transition name="global-opcity">
+    <transition name="hua-opcity">
       <div class="mask" v-show="currentActive" @click="maskHandle"></div>
     </transition>
   </div>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "GlobalPopup",
+  name: "HuaPopup",
   props: {
     value: {
       type: Boolean,

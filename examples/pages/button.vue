@@ -1,6 +1,6 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox text-center ">
       <div class="relative clearfix  pd-5 fs-12 color-6">
         <div
@@ -15,9 +15,7 @@
             </div>
 
             <div class="r">
-              <global-button :size="item.size" :type="item.type"
-                >确认</global-button
-              >
+              <hua-button :size="item.size" :type="item.type">确认</hua-button>
             </div>
           </div>
         </div>

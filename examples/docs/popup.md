@@ -2,34 +2,34 @@
 
 ### 使用指南
 ```html
-import { Popup } from 'global-vue';
+import { Popup } from 'hua-ui';
 Vue.use(Popup)
 
 ```
 ### 默认弹出
 
 ```html
-  <global-popup v-model="active">
+  <hua-popup v-model="active">
     内容内容呢
-  </global-popup>
+  </hua-popup>
 ```
 ### 弹出位置
 
 ```html
 <template>
-  <global-popup v-model="active2" position="bottom">
+  <hua-popup v-model="active2" position="bottom">
     <div class="bg-f text-center">
-      <global-cell v-on:click="showAlert('微信')">
+      <hua-cell v-on:click="showAlert('微信')">
         微信
-      </global-cell>
-      <global-cell v-on:click="showAlert('支付宝')">
+      </hua-cell>
+      <hua-cell v-on:click="showAlert('支付宝')">
         支付宝
-      </global-cell>
-      <global-cell v-on:click="showAlert('取消')">
+      </hua-cell>
+      <hua-cell v-on:click="showAlert('取消')">
         取消
-      </global-cell>
+      </hua-cell>
     </div>
-  </global-popup>
+  </hua-popup>
 </template>
 <script>
   export default {

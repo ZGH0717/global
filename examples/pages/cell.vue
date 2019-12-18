@@ -1,15 +1,15 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox ">
-      <global-cell>
+      <hua-cell>
         <i class="iconfont middle fs-18 color-red">&#xe715;</i>
         内容
-      </global-cell>
-      <global-cell is-arrow>
+      </hua-cell>
+      <hua-cell is-arrow>
         <i class="iconfont middle fs-18" style="color: blue ;">&#xe696;</i>
         内容
-      </global-cell>
+      </hua-cell>
     </div>
   </div>
 </template>

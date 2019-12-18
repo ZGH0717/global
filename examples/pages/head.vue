@@ -1,41 +1,41 @@
 <template>
   <div class="mainBox w100">
     <div class="relative mb-30" style="height:10%">
-      <global-head :title="$route.meta.title"></global-head>
+      <hua-head :title="$route.meta.title"></hua-head>
     </div>
     基本用法
     <div class="relative mb-30" style="height:10%">
-      <global-head :is-back="false" class="middle-box">
+      <hua-head :is-back="false" class="middle-box">
         <button class="iconL color-f" slot="iconL">iconL</button>
         <div slot="title" class="middle color-f">title</div>
         <button class="iconR color-f" slot="iconR">iconR</button>
-      </global-head>
+      </hua-head>
     </div>
     和Search组件一起使用
     <div class="relative mb-30" style="height:10%">
-      <global-head class="middle-box" :is-back="false">
-        <global-search
+      <hua-head class="middle-box" :is-back="false">
+        <hua-search
           class="middle"
           slot="title"
           v-model="searchval"
           cls="radius-35"
           v-on:click="searchHandle"
           placeholder="请输入内容"
-        ></global-search>
-      </global-head>
+        ></hua-search>
+      </hua-head>
     </div>
     和Search组件一起使用
     <div class="relative mb-30" style="height:10%">
-      <global-head class="middle-box" :is-back="false">
-        <global-search
+      <hua-head class="middle-box" :is-back="false">
+        <hua-search
           class="middle"
           slot="title"
           v-model="searchval"
           cls="radius-5"
           v-on:click="searchHandle"
           placeholder="请输入内容"
-        ></global-search>
-      </global-head>
+        ></hua-search>
+      </hua-head>
     </div>
   </div>
 </template>
@@ -82,7 +82,7 @@ export default {
     font-size: 16px;
   }
 }
-#global-head {
+#hua-head {
   background: #424242;
 }
 </style>

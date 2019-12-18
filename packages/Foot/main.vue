@@ -1,5 +1,5 @@
 <template>
-  <footer id="global-foot">
+  <footer id="hua-foot">
     <router-link
       class=" "
       v-for="(item, index) in menus"
@@ -27,7 +27,7 @@
 import TouchRipple from "../TouchRipple/index";
 
 export default {
-  name: "GlobalFoot",
+  name: "HuaFoot",
   components: {
     "zgh-touch-ripple": TouchRipple
   },

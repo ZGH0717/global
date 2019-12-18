@@ -2,14 +2,14 @@
 
 ### 使用指南
 ```html
-import { Search } from 'global-vue';
+import { Search } from 'hua-ui';
 
 Vue.use(Search);
 
 ```
 ### 基本用法
 ```html
- <global-search v-model="value1" cls="radius34" v-on:click="searchHandle" placeholder="请输入内容"></global-search>
+ <hua-search v-model="value1" cls="radius34" v-on:click="searchHandle" placeholder="请输入内容"></hua-search>
 ```
 
 ### Attributes

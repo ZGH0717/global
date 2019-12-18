@@ -2,25 +2,25 @@
 
 ### 使用指南
 ```html
-import { Head } from 'global-vue';
+import { Head } from 'hua-ui';
 Vue.use(Head);
 
 ```
 ### 基本用法 slot插槽
 ```html
-<global-head :is-back="false" class="middle-box">
+<hua-head :is-back="false" class="middle-box">
   <button class="iconL color-f" slot="iconL">iconL</button>
   <div slot="title" class="middle color-f">title</div>
   <button class="iconR color-f" slot="iconR">iconR</button>
-</global-head>
+</hua-head>
 ```
 ### 和Search组件一起使用
 ```html
 <template>
-<global-head class="middle-box" :is-back="false">
-   <global-search class="middle" slot="title" v-model="searchval" cls="radius34" v-on:click="searchHandle" placeholder="请输入内容">
-   </global-search>
-</global-head>
+<hua-head class="middle-box" :is-back="false">
+   <hua-search class="middle" slot="title" v-model="searchval" cls="radius34" v-on:click="searchHandle" placeholder="请输入内容">
+   </hua-search>
+</hua-head>
 </template>
 <script>
   export default {

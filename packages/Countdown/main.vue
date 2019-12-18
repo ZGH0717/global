@@ -1,22 +1,22 @@
 <template>
-  <div class="global-countdown">
+  <div class="hua-countdown">
     <div class="span-time">
-      <global-loading v-if="times.day === ''" size="15"></global-loading>
+      <hua-loading v-if="times.day === ''" size="15"></hua-loading>
       {{ times.day }}
     </div>
     天
     <div class="span-time">
-      <global-loading v-if="times.hours === ''" size="15"></global-loading
+      <hua-loading v-if="times.hours === ''" size="15"></hua-loading
       >{{ times.hours }}
     </div>
     时
     <div class="span-time">
-      <global-loading v-if="times.minute === ''" size="15"></global-loading
+      <hua-loading v-if="times.minute === ''" size="15"></hua-loading
       >{{ times.minute }}
     </div>
     分
     <div class="span-time">
-      <global-loading v-if="times.seconds === ''" size="15"></global-loading
+      <hua-loading v-if="times.seconds === ''" size="15"></hua-loading
       >{{ times.seconds }}
     </div>
     秒
@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import GlobalLoading from "../Loading";
+import HuaLoading from "../Loading";
 export default {
-  name: "GlobalCountdown",
+  name: "HuaCountdown",
   props: {
     remainTime: {
       type: Number,
@@ -34,7 +34,7 @@ export default {
     }
   },
   components: {
-    GlobalLoading
+    HuaLoading
   },
   data() {
     return {

@@ -1,12 +1,12 @@
 <template>
-  <button :class="['global-tag', type]">
+  <button :class="['hua-tag', type]">
     <slot></slot>
   </button>
 </template>
 
 <script>
 export default {
-  name: "GlobalTag",
+  name: "HuaTag",
   props: {
     type: {
       type: String,

@@ -15,9 +15,9 @@ then
   # build
   VERSION=$VERSION npm run dist
 
-  # publish global-css
-  echo "Releasing global-css $VERSION ..."
-  cd packages/global-css
+  # publish hua-css
+  echo "Releasing hua-css $VERSION ..."
+  cd packages/hua-css
   npm version $VERSION --message "[release] $VERSION"
   npm publish
   cd ../..

@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Checkbox } from 'global-vue';
+import { Checkbox } from 'hua-ui';
 Vue.use(Checkbox);
 
 ```
@@ -10,10 +10,10 @@ Vue.use(Checkbox);
 
 ```html
 <template>
-  <global-checkbox v-model="selectValue" :list="list" key-name="city" value-name="id" type="button" iconfont="&#xe756;">
-  </global-checkbox>
-  <global-checkbox v-model="selectValue" :list="list" key-name="city" value-name="id" type="cell" iconfont="&#xe756;">
-  </global-checkbox>
+  <hua-checkbox v-model="selectValue" :list="list" key-name="city" value-name="id" type="button" iconfont="&#xe756;">
+  </hua-checkbox>
+  <hua-checkbox v-model="selectValue" :list="list" key-name="city" value-name="id" type="cell" iconfont="&#xe756;">
+  </hua-checkbox>
 </template>
 
 <script>

@@ -1,8 +1,8 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top"></div>
-    <global-chat-foot v-on:sendHandle="onSend"></global-chat-foot>
+    <hua-chat-foot v-on:sendHandle="onSend"></hua-chat-foot>
   </div>
 </template>
 

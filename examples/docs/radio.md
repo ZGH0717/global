@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Radio } from 'global-vue';
+import { Radio } from 'hua-ui';
 Vue.use(Radio);
 
 ```
@@ -10,10 +10,10 @@ Vue.use(Radio);
 
 ```html
 <template>
-  <global-radio v-model="selectValue" :list="list" key-name="city" value-name="id" type="button" iconfont="&#xe756;">
-  </global-radio>
-  <global-radio v-model="selectValue" :list="list" key-name="city" value-name="id" type="cell" iconfont="&#xe756;">
-  </global-radio>
+  <hua-radio v-model="selectValue" :list="list" key-name="city" value-name="id" type="button" iconfont="&#xe756;">
+  </hua-radio>
+  <hua-radio v-model="selectValue" :list="list" key-name="city" value-name="id" type="cell" iconfont="&#xe756;">
+  </hua-radio>
 </template>
 
 <script>

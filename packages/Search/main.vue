@@ -1,6 +1,6 @@
 <template>
   <div style="width:98%;">
-    <div class="global-search">
+    <div class="hua-search">
       <div class="search-input">
         <i class="iconfont icon-search">&#xe6ac;</i>
         <input
@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "GlobalSearch",
+  name: "HuaSearch",
   props: {
     value: {
       type: String,

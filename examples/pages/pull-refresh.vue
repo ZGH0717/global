@@ -1,19 +1,19 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox ">
-      <global-pull-refresh
+      <hua-pull-refresh
         v-model="loading"
         v-on:refresh="update"
         v-on:load="loadMore"
       >
-        <global-cell class="text-center color-red">
+        <hua-cell class="text-center color-red">
           （手机模式下查看效果）
-        </global-cell>
-        <global-cell v-for="i in length" :key="i">
+        </hua-cell>
+        <hua-cell v-for="i in length" :key="i">
           {{ i }}刷新次数：{{ refreshNum }}r
-        </global-cell>
-      </global-pull-refresh>
+        </hua-cell>
+      </hua-pull-refresh>
     </div>
   </div>
 </template>

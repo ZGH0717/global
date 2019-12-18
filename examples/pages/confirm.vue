@@ -1,6 +1,6 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox">
       <!------------强大的分割线-------------->
       <button class="common-btn mg-20" @click="showConfirm1">Confirm</button>

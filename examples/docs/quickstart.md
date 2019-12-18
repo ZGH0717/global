@@ -1,11 +1,11 @@
-## global-vue
+## hua-ui
 
 一套基于 `Vue 2.0` 的移动端 `UI` 组件。
 
 ### 安装
 
 ```shell
-npm i global-vue -S
+npm i hua-ui -S
 ```
 
 ### 引入组件
@@ -14,10 +14,10 @@ npm i global-vue -S
 
 ```javascript
 import Vue from 'vue'
-import global-vue from 'global-vue'
-import 'global-vue/lib/global-css/index.css';
+import hua-ui from 'hua-ui'
+import 'hua-ui/lib/hua-css/index.css';
 
-Vue.use(global-vue)
+Vue.use(hua-ui)
 ```
 
 #### 部分引入
@@ -27,8 +27,8 @@ import Vue from 'vue'
 import {
   Cell
   // ...
-} from 'global-vue'
-import 'global-vue/lib/global-css/cell.css';
+} from 'hua-ui'
+import 'hua-ui/lib/hua-css/cell.css';
 
 Vue.use(Cell)
 ```
@@ -43,7 +43,7 @@ import {
   Alert,
   Toast
   // ...
-} from 'global-vue';
+} from 'hua-ui';
 
 Vue.prototype.$toast = Toast
 Vue.prototype.$alert = Alert

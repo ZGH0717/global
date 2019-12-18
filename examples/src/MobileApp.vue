@@ -124,7 +124,7 @@ body {
     left: 0;
   }
 }
-#global-head {
+#hua-head {
   background: #424242;
 }
 </style>

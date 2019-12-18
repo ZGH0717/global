@@ -2,11 +2,11 @@
   <div>
     <label
       disabled="disabled"
-      class="global-checkbox"
+      class="hua-checkbox"
       v-for="(item, index) in items"
       :key="item[valueName]"
       @click="selectHandle(index, item.checked)"
-      :class="['global-checkbox-' + type, item.checked ? 'checked' : '']"
+      :class="['hua-checkbox-' + type, item.checked ? 'checked' : '']"
     >
       <i class="iconfont" v-html="iconfont"></i>
       {{ item[keyName] }}
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "GlobalCheckbox",
+  name: "HuaCheckbox",
   props: {
     type: {
       type: String,

@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Toast } from 'global-vue';
+import { Toast } from 'hua-ui';
 Vue.prototype.$toast = Toast
 
 ```

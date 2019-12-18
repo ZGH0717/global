@@ -2,7 +2,7 @@
   <div class="page-header">
     <div class="page-header__top">
       <h1 class="page-header__logo">
-        <a href="#">global-vue</a>
+        <a href="#">hua-ui</a>
       </h1>
       <ul class="page-header__navs">
         <li class="page-header__item">
@@ -10,7 +10,7 @@
         </li>
         <!--<li class="page-header__item">-->
         <!--<a-->
-        <!--href="https://github.com/Brickies/global-vue"-->
+        <!--href="https://github.com/Brickies/hua-ui"-->
         <!--class="page-header__github"-->
         <!--target="_blank"-->
         <!--&gt;</a>-->

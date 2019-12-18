@@ -1,18 +1,15 @@
 <template>
   <div>
-    <transition :name="type ? 'global-popup' : 'global-toast'">
+    <transition :name="type ? 'hua-popup' : 'hua-toast'">
       <div
-        class="global-toast"
+        class="hua-toast"
         :class="[type ? 'middle' : '']"
         v-show="visible"
         :style="styles"
       >
         <div class="text-center" style="min-width: 100%;">
           <slot>
-            <global-loading
-              v-if="type === 'loading'"
-              :color="color"
-            ></global-loading>
+            <hua-loading v-if="type === 'loading'" :color="color"></hua-loading>
             <i class="iconfont" v-if="type === 'success'" style="color:#4cae4c"
               >&#xe6b1;</i
             >
@@ -27,19 +24,19 @@
         </div>
       </div>
     </transition>
-    <transition name="global-opcity">
+    <transition name="hua-opcity">
       <div class="mask" v-show="type && visible"></div>
     </transition>
   </div>
 </template>
 
 <script>
-import GlobalLoading from "../Loading";
+import HuaLoading from "../Loading";
 
 export default {
-  name: "GlobalToast",
+  name: "HuaToast",
   components: {
-    GlobalLoading
+    HuaLoading
   },
   data() {
     return {

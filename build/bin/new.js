@@ -66,7 +66,7 @@ export default {
 </script>`
   },
   {
-    filename: `global-css/src/${componentname}.css`,
+    filename: `hua-css/src/${componentname}.css`,
     content: `.v-${componentname} {
 
 }`

@@ -1,5 +1,5 @@
 <template>
-  <header id="global-head" class="text-center">
+  <header id="hua-head" class="text-center">
     <slot name="iconL"></slot>
     <button
       v-if="isBack"
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "global-head",
+  name: "hua-head",
   props: {
     imgL: {
       default() {

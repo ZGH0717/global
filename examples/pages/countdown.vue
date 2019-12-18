@@ -1,14 +1,11 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox ">
-      <global-cell>
+      <hua-cell>
         秒杀剩余时间：
-        <global-countdown
-          class="middle"
-          :remain-time="50000"
-        ></global-countdown>
-      </global-cell>
+        <hua-countdown class="middle" :remain-time="50000"></hua-countdown>
+      </hua-cell>
     </div>
   </div>
 </template>

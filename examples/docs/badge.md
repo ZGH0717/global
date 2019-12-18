@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Badge } from 'global-vue';
+import { Badge } from 'hua-ui';
 
 Vue.use(Badge);
 
@@ -13,11 +13,11 @@ Vue.use(Badge);
 ```html
 <div stype="position:relative">
   消息
-  <global-badge :count="10" top="2" right="2"></global-badge>
+  <hua-badge :count="10" top="2" right="2"></hua-badge>
 </div>
 <div stype="position:relative">
   消息
-  <global-badge top="8" right="10"></global-badge>
+  <hua-badge top="8" right="10"></hua-badge>
 </div>
 
 ```

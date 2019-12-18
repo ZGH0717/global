@@ -1,14 +1,10 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox fs-14">
-      <global-switch
-        class="pd-15"
-        v-model="taggleActive"
-        v-on:click="clickHandle"
-      >
+      <hua-switch class="pd-15" v-model="taggleActive" v-on:click="clickHandle">
         开启夜间模式
-      </global-switch>
+      </hua-switch>
     </div>
   </div>
 </template>

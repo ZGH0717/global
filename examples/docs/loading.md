@@ -2,20 +2,20 @@
 
 ### 使用指南
 ```html
-import { Loading } from 'global-vue';
+import { Loading } from 'hua-ui';
 Vue.use(Loading);
 
 ```
 ### 基本用法
 配合Button组件 一起使用
 ```html
-<global-loading :size="40" color="#db2227"></global-loading>
+<hua-loading :size="40" color="#db2227"></hua-loading>
 
 ```
 ### 居中用法
 ```html
 
-<global-loading position="center" class="absoluteCC" color="#db2227"></global-loading>
+<hua-loading position="center" class="absoluteCC" color="#db2227"></hua-loading>
 
 ```
 ### Attributes

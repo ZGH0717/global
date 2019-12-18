@@ -1,5 +1,5 @@
 <template>
-  <div class="global-chat-foot">
+  <div class="hua-chat-foot">
     <div class="mask" v-if="showEmoji" @click="_close"></div>
 
     <div class="bg-f pd-10 borderT borderB clearfix ">
@@ -38,7 +38,7 @@ var emoji = require("emoji");
 var EMOJI_MAP = emoji.EMOJI_MAP;
 
 export default {
-  name: "GlobalChatFoot",
+  name: "HuaChatFoot",
   props: {
     value: {
       type: String,

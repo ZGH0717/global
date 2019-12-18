@@ -365,7 +365,7 @@ const { Hello } = vui
 Vue.component(Hello.name, Hello)
 ```
 
-#### global-vue. 在 `examples/pages/hello.vue` 直接使用
+#### hua-ui. 在 `examples/pages/hello.vue` 直接使用
 
 在 `examples/pages` 中我们需要建立和组件名同名的 demo 文件，并对组件进行使用
 

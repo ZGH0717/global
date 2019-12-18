@@ -1,6 +1,6 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox">
       <v-hello message="my component library" @click="handleClick"></v-hello>
       <p>{{ msg }}</p>

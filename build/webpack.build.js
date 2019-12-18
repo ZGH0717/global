@@ -1,14 +1,15 @@
 'use strict'
 const webpack = require('webpack')
 const config = require('./webpack.base.conf')
-
+const utils = require('./utils')
 config.entry = {
-  'global-vue': './src/index.js'
+  'hua-ui':'./src/index.js',
+  ...utils.getComponentEntries('packages')
 }
 
 config.output = {
   filename: './lib/[name].js',
-  library: 'global-vue',
+  library: 'hua-ui',
   libraryTarget: 'umd'
 }
 

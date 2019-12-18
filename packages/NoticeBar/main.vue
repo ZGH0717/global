@@ -1,5 +1,5 @@
 <template>
-  <div class="global-notice-bar">
+  <div class="hua-notice-bar">
     &nbsp;
     <slot name="iconL"></slot>
     <div class="content">
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "GlobalNoticeBar",
+  name: "HuaNoticeBar",
   props: {
     content: {
       type: String,

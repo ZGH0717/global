@@ -6,12 +6,12 @@ import App from "./App";
 import registerRoute from "./router.config";
 import navConfig from "./nav.config";
 import isMobile from "./is-mobile";
-import GlobalVue from "src/index.js";
-import "packages/global-css/src/index.less";
+import HuaVue from "src/index.js";
+import "packages/hua-css/src/index.less";
 import "../assets/docs.css";
 
 Vue.config.productionTip = false;
-Vue.use(GlobalVue);
+Vue.use(HuaVue);
 Vue.use(VueRouter);
 
 const routesConfig = registerRoute(navConfig);

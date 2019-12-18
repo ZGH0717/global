@@ -1,18 +1,18 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox">
-      <global-button class="mt-10">
-        加载中 <global-loading color="#db2227" size="14"></global-loading>
-      </global-button>
-      <global-button class="mt-10" type="btn-success" size="btn-sm">
-        加载中 <global-loading color="#fff" size="24"></global-loading>
-      </global-button>
-      <global-loading
+      <hua-button class="mt-10">
+        加载中 <hua-loading color="#db2227" size="14"></hua-loading>
+      </hua-button>
+      <hua-button class="mt-10" type="btn-success" size="btn-sm">
+        加载中 <hua-loading color="#fff" size="24"></hua-loading>
+      </hua-button>
+      <hua-loading
         position="center"
         class="absoluteCC"
         color="#db2227"
-      ></global-loading>
+      ></hua-loading>
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="global-pull-refresh"
+    class="hua-pull-refresh"
     :style="{
       transform: `translate3d(0,${translateY}px,0)`,
       transition: isTransition ? '300ms' : 'none'
@@ -13,7 +13,7 @@
         :class="{ active: derection }"
         >&#xe65b;</i
       >
-      <global-loading size="18" v-if="loading" color="red"></global-loading>
+      <hua-loading size="18" v-if="loading" color="red"></hua-loading>
       &nbsp;
       {{ msg }}
     </div>
@@ -21,7 +21,7 @@
       <div ref="contentBox">
         <slot></slot>
         <div class="pd-10 text-center fs-14">
-          <global-loading size="18" v-if="loading" color="red"></global-loading>
+          <hua-loading size="18" v-if="loading" color="red"></hua-loading>
           &nbsp;
           {{ loadMsg }}
         </div>
@@ -31,10 +31,10 @@
 </template>
 
 <script>
-import GlobalLoading from "../Loading";
+import HuaLoading from "../Loading";
 
 export default {
-  name: "GlobalPullRefresh",
+  name: "HuaPullRefresh",
   props: {
     value: {
       type: Boolean,
@@ -42,7 +42,7 @@ export default {
     }
   },
   components: {
-    GlobalLoading
+    HuaLoading
   },
   data() {
     return {

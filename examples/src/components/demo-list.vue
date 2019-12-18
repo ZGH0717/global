@@ -1,7 +1,7 @@
 <template>
   <div class="side-nav">
-    <!--<h1 class="global-title"></h1>-->
-    <h2 class="global-desc">global-vue 移动组件库</h2>
+    <!--<h1 class="hua-title"></h1>-->
+    <h2 class="hua-desc">hua-ui 移动组件库</h2>
     <div class="mobile-navs">
       <div v-for="(item, index) in data" :key="index">
         <div class="mobile-nav-item" v-if="item.showInMobile">
@@ -43,14 +43,14 @@ export default {
   position: relative;
   z-index: 1;
 
-  .global-title,
-  .global-desc {
+  .hua-title,
+  .hua-desc {
     text-align: center;
     font-weight: normal;
     user-select: none;
   }
 
-  .global-title {
+  .hua-title {
     padding-top: 40px;
     height: 0;
     overflow: hidden;
@@ -58,7 +58,7 @@ export default {
     margin-bottom: 10px;
   }
 
-  .global-desc {
+  .hua-desc {
     font-size: 14px;
     color: #666;
     margin-bottom: 50px;

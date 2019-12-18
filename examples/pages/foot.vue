@@ -1,21 +1,21 @@
 <template>
   <div>
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top text-center color-red">
       <div class="relative mb-30" style="height:100px">
-        <global-cell>默认类型</global-cell>
+        <hua-cell>默认类型</hua-cell>
 
-        <global-foot :menus="menus1"></global-foot>
+        <hua-foot :menus="menus1"></hua-foot>
       </div>
 
       <div class="relative mb-30" style="height:100px">
-        <global-cell>type1类型</global-cell>
+        <hua-cell>type1类型</hua-cell>
 
-        <global-foot type="type1" :menus="menus"></global-foot>
+        <hua-foot type="type1" :menus="menus"></hua-foot>
       </div>
       <div class="relative mb-30" style="height:100px">
-        <global-cell>type2类型</global-cell>
-        <global-foot type="type2" :menus="menus"></global-foot>
+        <hua-cell>type2类型</hua-cell>
+        <hua-foot type="type2" :menus="menus"></hua-foot>
       </div>
     </div>
   </div>

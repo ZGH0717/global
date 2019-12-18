@@ -3,13 +3,13 @@ import VueRouter from "vue-router";
 import MobileApp from "./MobileApp";
 import registerRoute from "./router.config";
 import navConfig from "./nav.config";
-import GlobalVue from "src/index";
+import HuaVue from "src/index";
 import isMobile from "./is-mobile.js";
-import "packages/global-css/src/index.less";
+import "packages/hua-css/src/index.less";
 
 import DemoList from "./components/demo-list.vue";
 
-Vue.use(GlobalVue);
+Vue.use(HuaVue);
 Vue.use(VueRouter);
 const isProduction = process.env.NODE_ENV === "production";
 const routesConfig = registerRoute(navConfig, true);

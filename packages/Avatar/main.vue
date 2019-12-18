@@ -1,6 +1,6 @@
 <template>
   <div
-    class="global-avatar"
+    class="hua-avatar"
     :class="{ circle: !radius && isCircle }"
     :style="{
       borderRadius: radius + unit,
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "GlobalAvatar",
+  name: "HuaAvatar",
   props: {
     image: {
       type: String,

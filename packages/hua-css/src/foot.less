@@ -1,0 +1,127 @@
+@import "common/config";
+
+#hua-foot .router-link-active.router-link-exact-active,
+#hua-foot .active {
+  span, i {
+    color: @common_cl !important;
+  }
+  i {
+    font-size: 24px !important;
+  }
+
+}
+
+#hua-foot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: @m-bottom;
+  text-align: center;
+  font-size: 15px;
+  z-index: 999;
+  display: flex;
+  filter:drop-shadow(0px -1px 5px rgba(0,0,0,.3));
+  background: #fff;
+
+
+  a {
+    background: #fff;
+    display: block;
+    flex: 1;
+    height: @m-bottom;
+    position: relative;
+    .type1 {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      @L: 50px;
+      width: @L;
+      height: @L;
+      line-height: @L;
+      margin-left: -@L/2;
+      border-radius: 100%;
+      background: #fff;
+      text-align: center;
+      img {
+        @L: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: @L;
+        height: @L;
+        margin: -@L/2 0 0 -@L/2;
+        z-index: 1;
+      }
+      &:before {
+        content: '';
+        display: block;
+        width: 80%;
+        height: 80%;
+        background: @common_cl;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        border-radius: 100%;
+        z-index: 0;
+      }
+
+    }
+    .type2 {
+      position: absolute;
+      //border-top: 1px solid #eee;
+      //box-shadow: 0 -1px 3px #ccc;
+      left: 50%;
+      bottom: 6px;
+      @L: 62px;
+      width: @L;
+      height: @L;
+      line-height: @L;
+      margin-left: -@L/2;
+      border-radius: 100%;
+      background: #fff;
+      text-align: center;
+      z-index: 1;
+      img {
+        @L: 34px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: @L;
+        height: @L;
+        margin: -@L/2 0 0 -@L/2;
+        z-index: 1;
+      }
+      &:before {
+        @w: 86%;
+        content: '';
+        display: block;
+        width: @w;
+        height: @w;
+        background: @common_cl;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+        z-index: 0;
+      }
+    }
+  }
+  img {
+    @L: 40;
+    display: block;
+    width:20px;
+    height:20px;
+    margin: 5px auto;
+  }
+  i {
+    display: block;
+    margin: 5px auto;
+    font-size: 22px;
+  }
+  span {
+    display: block;
+    color: #000;
+  }
+}

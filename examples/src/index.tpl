@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>global-vue - Vue UI for Mobile</title>
+  <title>hua-ui - Vue UI for Mobile</title>
   <script>
     (function(doc, win) {
         var docEl = doc.documentElement,

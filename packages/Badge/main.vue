@@ -1,12 +1,12 @@
 <template>
   <div
-    class="global-badge"
+    class="hua-badge"
     :class="{ 'show-count': count > 0 }"
     :style="{
-      top: typeof top === 'string' ? top : top + 'px',
-      right: typeof right === 'string' ? right : right + 'px',
-      bottom: typeof bottom === 'string' ? bottom : bottom + 'px',
-      left: typeof left === 'string' ? left : left + 'px'
+      top: currentTop,
+      right: currentRight,
+      bottom: currentBottom,
+      left: currentLeft
     }"
   >
     {{ count > 0 ? count : "" }}
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "GlobalBadge",
+  name: "HuaBadge",
   props: {
     count: {
       type: [String, Number],
@@ -36,6 +36,28 @@ export default {
     bottom: {
       type: [String, Number],
       default: "auto"
+    }
+  },
+  computed: {
+    unit() {
+      return "px";
+    },
+
+    currentTop() {
+      return typeof this.top === "string" ? this.top : this.top + this.unit;
+    },
+    currentRight() {
+      return typeof this.right === "string"
+        ? this.right
+        : this.right + this.unit;
+    },
+    currentBottom() {
+      return typeof this.bottom === "string"
+        ? this.bottom
+        : this.bottom + this.unit;
+    },
+    currentLeft() {
+      return typeof this.left === "string" ? this.left : this.left + this.unit;
     }
   }
 };

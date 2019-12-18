@@ -1,6 +1,6 @@
 <template>
   <div class="propBox">
-    <transition name="global-popup">
+    <transition name="hua-popup">
       <div class="pt-30 pl-15 pr-15 alert bg-f" ref="prop" v-show="visible">
         <slot>
           <div class="color-3  pl-15 pr-15 fs-16" style="word-wrap: break-word">
@@ -18,7 +18,7 @@
         <div v-if="isClose" class="close" @click="_close"></div>
       </div>
     </transition>
-    <transition name="global-opcity">
+    <transition name="hua-opcity">
       <div class="mask" v-show="visible" @click="maskHandle"></div>
     </transition>
   </div>
@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: "global-Alert",
+  name: "hua-Alert",
   data() {
     return {
       isClose: false,

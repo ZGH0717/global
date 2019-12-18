@@ -1,6 +1,6 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox fs-14 lh1-5">
       <div class="clearfix mt-30">
         <div>
@@ -8,13 +8,13 @@
             触发方式 ： trigger===》click <br />
             位置： placement===》bottom-left
           </div>
-          <global-dropdown
+          <hua-dropdown
             ref="globalDropdown"
             class="middle ml-15 user-box"
             trigger="click"
             placement="bottom-left"
           >
-            <global-avatar slot="dropdown-head" class="middle common-cursor" />
+            <hua-avatar slot="dropdown-head" class="middle common-cursor" />
             <ul @click="$refs.globalDropdown && $refs.globalDropdown._hide()">
               <li class="user-info middle-box ">
                 <div class="middle">
@@ -33,20 +33,20 @@
                 </button>
               </li>
             </ul>
-          </global-dropdown>
+          </hua-dropdown>
         </div>
         <div style="margin-top: 100px;">
           <div>
             触发方式 ： trigger===》hover <br />
             位置： placement===》bottom-right
           </div>
-          <global-dropdown
+          <hua-dropdown
             ref="globalDropdown"
             class="middle mr-15 user-box r"
             trigger="hover"
             placement="bottom-right"
           >
-            <global-avatar slot="dropdown-head" class="middle common-cursor" />
+            <hua-avatar slot="dropdown-head" class="middle common-cursor" />
             <ul @click="$refs.globalDropdown && $refs.globalDropdown._hide()">
               <li class="user-info middle-box ">
                 <div class="middle">
@@ -65,7 +65,7 @@
                 </button>
               </li>
             </ul>
-          </global-dropdown>
+          </hua-dropdown>
         </div>
       </div>
     </div>

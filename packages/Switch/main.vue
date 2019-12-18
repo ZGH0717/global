@@ -1,5 +1,5 @@
 <template>
-  <div class="global-switch" :class="{ active: currentValue }" @click="Handle">
+  <div class="hua-switch" :class="{ active: currentValue }" @click="Handle">
     <slot></slot>
     <div class="switch">
       <span class="bar"></span>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "GlobalSwitch",
+  name: "HuaSwitch",
   props: {
     value: {
       type: Boolean,

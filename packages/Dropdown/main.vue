@@ -1,6 +1,6 @@
 <template>
   <div
-    class="global-dropdown"
+    class="hua-dropdown"
     :class="{ 'hover-animate': trigger === 'hover', active: showDropdown }"
     ref="dropdownRef"
   >
@@ -41,7 +41,7 @@
 import { off, on } from "@/utils/dom";
 
 export default {
-  name: "GlobalDropdown",
+  name: "HuaDropdown",
   props: {
     placement: {
       type: String,

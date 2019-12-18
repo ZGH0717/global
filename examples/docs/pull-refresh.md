@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { PullRefresh } from 'global-vue';
+import { PullRefresh } from 'hua-ui';
 Vue.use(PullRefresh)
 
 ```
@@ -10,9 +10,9 @@ Vue.use(PullRefresh)
 
 ```html
 <template>
-  <global-pull-refresh v-model="loading" v-on:refresh="update" v-on:load="loadMore">
+  <hua-pull-refresh v-model="loading" v-on:refresh="update" v-on:load="loadMore">
     内容。。。。。
-  </global-pull-refresh>
+  </hua-pull-refresh>
 </template>
 <script>
   export default {

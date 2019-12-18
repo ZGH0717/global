@@ -2,29 +2,29 @@
 
 ### 使用指南
 ```html
-import { Avatar } from 'global-vue';
+import { Avatar } from 'hua-ui';
 
 Vue.use(Avatar);
 
 ```
 ### 基本用法
 ```html
-<global-Avatar :image="image" />
+<hua-Avatar :image="image" />
 
 ```
 ### 圆角 is-circle false
 ```html
-<global-Avatar :image="image" :is-circle="false" />
+<hua-Avatar :image="image" :is-circle="false" />
 
 ```
 ###  size 宽高相同
 ```html
-<global-Avatar :image="image" size="100px" />
+<hua-Avatar :image="image" size="100px" />
 
 ```
 ### 宽高单独设置 width height
 ```html
-<global-Avatar
+<hua-Avatar
   :image="image"
   :is-circle="false"
   width="200px"
@@ -34,7 +34,7 @@ Vue.use(Avatar);
 ```
 ### 倒角 设置
 ```html
-<global-Avatar :image="image" radius="10" />
+<hua-Avatar :image="image" radius="10" />
 
 ```
 ### Attributes

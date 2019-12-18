@@ -2,7 +2,7 @@
 
 ### 使用指南
 ```html
-import { Alert } from 'global-vue';
+import { Alert } from 'hua-ui';
 Vue.prototype.$alert = Alert
 
 ```

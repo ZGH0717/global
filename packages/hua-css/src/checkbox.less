@@ -1,0 +1,64 @@
+@import "common/config";
+
+.hua-checkbox {
+  cursor: pointer;
+  transition: all .2s;
+  &.hua-checkbox-button {
+    display: inline-block;
+    padding: 5px 10px;
+    vertical-align: middle;
+    border: 1px solid #ececec;
+    margin: 0 10px 10px 0;
+    &.checked {
+      color: @common_cl;
+      border-color: @common_cl;
+      i {
+        color: @common_cl;
+      }
+    }
+  }
+
+  &.hua-checkbox-cell {
+    position: relative;
+    padding: 10px 15px;
+    line-height: 24px;
+    display: block;
+    width: 100%;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: none;
+    font-size: 14px;
+    i {
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      transform: translateY(-50%);
+      right: 12px;
+    }
+    &.checked {
+      color: @common_cl;
+      border-color: @common_cl;
+      i {
+        color: @common_cl;
+      }
+    }
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #e5e5e5;
+      transform: scaleY(.5);
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+}

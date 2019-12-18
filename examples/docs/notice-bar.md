@@ -2,36 +2,36 @@
 
 ### 使用指南
 ```html
-import { NoticeBar } from 'global-vue';
+import { NoticeBar } from 'hua-ui';
 
 Vue.use(NoticeBar);
 
 ```
 ### 无插槽 速度根据内容自适应
 ```html
-  <global-notice-bar content="无icon"></global-notice-bar>
+  <hua-notice-bar content="无icon"></hua-notice-bar>
 ```
 
 ### 有左插槽（icon） 速度5
 ```html
-  <global-notice-bar :seed="5" content="有左icon">
+  <hua-notice-bar :seed="5" content="有左icon">
     <i class="iconfont" slot="iconL">&#xe756;</i>
-  </global-notice-bar>
+  </hua-notice-bar>
 ```
 
 ### 有右插槽（icon） 速度10
 ```html
-  <global-notice-bar :seed="10" content="有右icon">
+  <hua-notice-bar :seed="10" content="有右icon">
     <i class="iconfont" slot="iconR">&#xe6a7;</i>
-  </global-notice-bar>
+  </hua-notice-bar>
 ```
 
 ### 有左右插槽（icon） 速度15
 ```html
-  <global-notice-bar :seed="15" content="有左右icon">
+  <hua-notice-bar :seed="15" content="有左右icon">
     <i class="iconfont" slot="iconL">&#xe756;</i>
     <i class="iconfont" slot="iconR">&#xe6a7;</i>
-  </global-notice-bar>
+  </hua-notice-bar>
 ```
 ### Attributes
 

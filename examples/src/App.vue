@@ -84,7 +84,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
-#global-head {
+#hua-head {
   background: #424242;
 }
 </style>

@@ -2,14 +2,14 @@
 
 ### 使用指南
 ```html
-import { Dropdown } from 'global-vue';
+import { Dropdown } from 'hua-ui';
 
 Vue.use(Dropdown);
 
 ```
 ### 基本用法
 ```html
-<global-dropdown
+<hua-dropdown
   ref="globalDropdown"
   class="middle ml-15 user-box"
   trigger="click"
@@ -19,7 +19,7 @@ Vue.use(Dropdown);
   <div>
     content
   </div>
-</global-dropdown>
+</hua-dropdown>
 
 ```
 ### Attributes

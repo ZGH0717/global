@@ -2,13 +2,13 @@
 
 ### 使用指南
 ```html
-import { Countdown } from 'global-vue';
+import { Countdown } from 'hua-ui';
 Vue.use(Countdown);
 
 ```
 ### 基本用法
 ```html
- <global-countdown :remain-time="50000"></global-countdown>
+ <hua-countdown :remain-time="50000"></hua-countdown>
 ```
 ### Attributes
 

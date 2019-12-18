@@ -2,14 +2,14 @@
 
 ### 使用指南
 ```html
-import { Tag } from 'global-vue';
+import { Tag } from 'hua-ui';
 
 Vue.use(Tag);
 
 ```
 ### 基本用法
 ```html
-<global-tag type="tag-default">确认</global-tag>
+<hua-tag type="tag-default">确认</hua-tag>
 ```
 ### Attributes
 

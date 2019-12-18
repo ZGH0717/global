@@ -1,31 +1,21 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox text-center ">
       <div class="pd-15">
-        <global-button size="btn-lg" v-on:click="click1"
-          >文字提示</global-button
-        >
+        <hua-button size="btn-lg" v-on:click="click1">文字提示</hua-button>
       </div>
       <div class="pd-15">
-        <global-button size="btn-lg" v-on:click="click2"
-          >loading提示</global-button
-        >
+        <hua-button size="btn-lg" v-on:click="click2">loading提示</hua-button>
       </div>
       <div class="pd-15">
-        <global-button size="btn-lg" v-on:click="click3"
-          >成功提示</global-button
-        >
+        <hua-button size="btn-lg" v-on:click="click3">成功提示</hua-button>
       </div>
       <div class="pd-15">
-        <global-button size="btn-lg" v-on:click="click4"
-          >失败提示</global-button
-        >
+        <hua-button size="btn-lg" v-on:click="click4">失败提示</hua-button>
       </div>
       <div class="pd-15">
-        <global-button size="btn-lg" v-on:click="click5"
-          >警告提示</global-button
-        >
+        <hua-button size="btn-lg" v-on:click="click5">警告提示</hua-button>
       </div>
     </div>
   </div>

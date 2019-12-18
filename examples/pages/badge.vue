@@ -1,18 +1,18 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox text-center ">
       <br />
-      <global-button size="btn-lg" class="relative">
+      <hua-button size="btn-lg" class="relative">
         消息
-        <global-badge :count="10" top="2" right="2"></global-badge>
-      </global-button>
+        <hua-badge :count="10" top="2" right="2"></hua-badge>
+      </hua-button>
       <br />
       <br />
-      <global-button size="btn-lg" class="relative">
+      <hua-button size="btn-lg" class="relative">
         消息
-        <global-badge top="8" right="10"></global-badge>
-      </global-button>
+        <hua-badge top="8" right="10"></hua-badge>
+      </hua-button>
     </div>
   </div>
 </template>

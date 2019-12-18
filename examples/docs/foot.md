@@ -2,14 +2,14 @@
 
 ### 使用指南
 ```html
-import { Foot } from 'global-vue';
+import { Foot } from 'hua-ui';
 Vue.use(Foot);
 
 ```
 ### 默认类型
 ```html
 <template>
-    <global-foot :menus="menus1"></global-foot>
+    <hua-foot :menus="menus1"></hua-foot>
 </template>
 <script>
   export default {
@@ -43,7 +43,7 @@ Vue.use(Foot);
 ### type1类型
 ```html
 <template>
-    <global-foot type="type1"  :menus="menus"></global-foot>
+    <hua-foot type="type1"  :menus="menus"></hua-foot>
 </template>
 <script>
   export default {
@@ -82,7 +82,7 @@ Vue.use(Foot);
 ### type2类型
 ```html
 <template>
-    <global-foot type="type2"  :menus="menus"></global-foot>
+    <hua-foot type="type2"  :menus="menus"></hua-foot>
 </template>
 <script>
   export default {

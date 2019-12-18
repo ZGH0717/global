@@ -1,25 +1,25 @@
 <template>
   <div class="h100 w100">
-    <global-head :title="$route.meta.title"></global-head>
+    <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox fs-14 lh1-5">
       <div class="mb-10">
         默认
-        <global-Avatar :image="image" />
+        <hua-Avatar :image="image" />
       </div>
 
       <div class="mb-10">
         圆角 is-circle false
-        <global-Avatar :image="image" :is-circle="false" />
+        <hua-Avatar :image="image" :is-circle="false" />
       </div>
 
       <div class="mb-10">
         size 宽高相同
-        <global-Avatar :image="image" size="100px" />
+        <hua-Avatar :image="image" size="100px" />
       </div>
 
       <div class="mb-10">
         宽高单独设置 width height
-        <global-Avatar
+        <hua-Avatar
           :image="image"
           :is-circle="false"
           width="200px"
@@ -29,7 +29,7 @@
 
       <div>
         倒角 radius
-        <global-Avatar :image="image" radius="10" />
+        <hua-Avatar :image="image" radius="10" />
       </div>
     </div>
   </div>

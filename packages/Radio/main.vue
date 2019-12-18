@@ -2,11 +2,11 @@
   <div>
     <label
       disabled="disabled"
-      class="global-radio"
+      class="hua-radio"
       v-for="(item, index) in items"
       :key="item[valueName]"
       @click="selectValue = item"
-      :class="['global-radio-' + type, activeIndex === index ? 'checked' : '']"
+      :class="['hua-radio-' + type, activeIndex === index ? 'checked' : '']"
     >
       <i class="iconfont" v-html="iconfont"></i>
       {{ item[keyName] }}
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "GlobalRadio",
+  name: "HuaRadio",
   props: {
     iconfont: {
       type: String,

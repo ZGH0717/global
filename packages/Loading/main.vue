@@ -1,10 +1,10 @@
 <template>
-  <div class="global-loading middle" :class="[position]">
+  <div class="hua-loading middle" :class="[position]">
     <span
-      class="global-loading-box"
+      class="hua-loading-box"
       :style="{ width: size + 'px', height: size + 'px' }"
     >
-      <svg class="global-loading--circular" viewBox="25 25 50 50">
+      <svg class="hua-loading--circular" viewBox="25 25 50 50">
         <circle cx="50" cy="50" r="20" fill="none" :style="{ stroke: color }" />
       </svg>
     </span>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "GlobalLoading",
+  name: "HuaLoading",
   props: {
     type: {
       type: String,

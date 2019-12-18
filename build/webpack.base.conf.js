@@ -39,8 +39,8 @@ module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
     'vendor': ['vue', 'vue-router'],
-    'global-vue': './examples/src/index.js',
-    'global-mobile': './examples/src/mobile.js'
+    'hua-ui': './examples/src/index.js',
+    'hua-mobile': './examples/src/mobile.js'
   },
   output: {
     path: path.join(__dirname, '../examples/dist'),
@@ -160,13 +160,13 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      chunks: ['manifest', 'vendor', 'global-vue'],
+      chunks: ['manifest', 'vendor', 'hua-ui'],
       template: 'examples/src/index.tpl',
       filename: 'index.html',
       inject: true
     }),
     new HtmlWebpackPlugin({
-      chunks: ['manifest', 'vendor', 'global-mobile'],
+      chunks: ['manifest', 'vendor', 'hua-mobile'],
       template: 'examples/src/index.tpl',
       filename: 'mobile.html',
       inject: true
