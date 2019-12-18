@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>global-vue - Vue UI for Mobile</title>
+  <script>
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function() {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+          };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window);
+  </script>
+
+<link href="/global-mobile.6feb3849603d2598e8566550bd52e174.css" rel="stylesheet"></head>
+<body>
+
+  <div id="app-container">
+    <app></app>
+  </div>
+
+<script type="text/javascript" src="/manifest.min.0b651587094e9458edea.js"></script><script type="text/javascript" src="/vendor.min.0b651587094e9458edea.js"></script><script type="text/javascript" src="/global-mobile.min.0b651587094e9458edea.js"></script></body>
+</html>
