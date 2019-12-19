@@ -20,5 +20,7 @@
     "gulp-postcss": "^7.0.1",
     "postcss-salad": "^2.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-autoprefixer": "^7.0.1"
+  }
 }

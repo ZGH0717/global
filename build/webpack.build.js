@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const config = require('./webpack.base.conf')
 const utils = require('./utils')
 config.entry = {
-  'hua-ui':'./src/index.js',
+  'hua-ui.common':'./src/index.js',
   ...utils.getComponentEntries('packages')
 }
 

@@ -1,4 +1,5 @@
 import { version } from "../package.json";
+import Main from "../packages/Main";
 import Button from "../packages/Button";
 import Alert from "../packages/Alert";
 import Avatar from "../packages/Avatar";
@@ -24,6 +25,7 @@ import Countdown from "../packages/Countdown";
 import PullRefresh from "../packages/PullRefresh";
 
 const components = [
+  Main,
   Button,
   Avatar,
   ChatFoot,
@@ -61,6 +63,7 @@ if (typeof window !== "undefined" && window.Vue) {
 export default {
   install,
   version,
+  Main,
   Button,
   Alert,
   Avatar,

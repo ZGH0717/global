@@ -77,7 +77,7 @@ export default {
   },
   watch: {
     selectValue(val) {
-      this.$alert.show({
+      this.$alert({
         message: `city:${val.city}，id:${val.id}`,
         onShow: () => {},
         onHide: () => {}

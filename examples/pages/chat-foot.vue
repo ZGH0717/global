@@ -11,7 +11,7 @@ export default {
   name: "chat-foot",
   methods: {
     onSend(val) {
-      this.$alert.show(`发送内容为${val}`);
+      this.$alert(`发送内容为${val}`);
     }
   }
 };

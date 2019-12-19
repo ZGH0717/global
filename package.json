@@ -1,18 +1,17 @@
 {
-  "name": "component-library-test",
-  "version": "1.0.4",
-  "description": "A Vue.js project",
-  "author": "qiangdada",
+  "name": "hua-ui",
+  "version": "1.0.2",
+  "description": "A Component Library for Vue.js.",
+  "author": "ZGH0717 <583526930@qq.com>",
   "license": "MIT",
-  "main": "lib/hua-ui.js",
+  "main": "lib/hua-ui.common.js",
   "files": [
     "lib",
     "src",
     "packages"
   ],
-  "private": false,
   "scripts": {
-    "bootstrap": "npm install ",
+    "install": "npm install",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "deploy": "npm run deploy:docs && gh-pages -d examples/dist",
     "deploy:docs": "rimraf examples/dist && node build/build.js",
@@ -27,7 +26,6 @@
     "build:hua-css": "gulp build --gulpfile packages/hua-css/gulpfile.js && rimraf lib/hua-css && cp-cli packages/hua-css/lib lib/hua-css"
   },
   "dependencies": {
-    "element-ui": "^2.2.2",
     "emoji": "^0.3.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"

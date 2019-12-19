@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     showAlert() {
-      this.$alert.show({
+      this.$alert({
         message: `点了${this.n}次`,
         onShow: () => {
           console.log(this);
