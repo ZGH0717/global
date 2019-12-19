@@ -20,24 +20,24 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       type: [
-        "tag-default",
-        "tag-primary-color",
-        "tag-success-color",
-        "tag-info-color",
-        "tag-warning-color",
-        "tag-danger-color",
-        "tag-primary",
-        "tag-success",
-        "tag-info",
-        "tag-warning",
-        "tag-danger"
+        'tag-default',
+        'tag-primary-color',
+        'tag-success-color',
+        'tag-info-color',
+        'tag-warning-color',
+        'tag-danger-color',
+        'tag-primary',
+        'tag-success',
+        'tag-info',
+        'tag-warning',
+        'tag-danger'
       ]
-    };
+    }
   }
-};
+}
 </script>
 <style>
 .tag1 {

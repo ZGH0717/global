@@ -23,34 +23,34 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       active: false,
       active2: false,
       active3: false,
       active4: false
-    };
+    }
   },
   methods: {
-    click1() {
-      this.$toast("更新成功");
+    click1 () {
+      this.$toast('更新成功')
     },
-    click2() {
-      this.$toast.loading("加载中...");
-      setTimeout(() => this.$toast.close(), 3000);
+    click2 () {
+      this.$toast.loading('加载中...')
+      setTimeout(() => this.$toast.close(), 3000)
     },
-    click3() {
-      this.$toast.success("支付成功");
-      setTimeout(() => this.$toast.close(), 3000);
+    click3 () {
+      this.$toast.success('支付成功')
+      setTimeout(() => this.$toast.close(), 3000)
     },
-    click4() {
-      this.$toast.fail("支付失败");
-      setTimeout(() => this.$toast.close(), 3000);
+    click4 () {
+      this.$toast.fail('支付失败')
+      setTimeout(() => this.$toast.close(), 3000)
     },
-    click5() {
-      this.$toast.warning("操作有误");
-      setTimeout(() => this.$toast.close(), 3000);
+    click5 () {
+      this.$toast.warning('操作有误')
+      setTimeout(() => this.$toast.close(), 3000)
     }
   }
-};
+}
 </script>

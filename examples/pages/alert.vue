@@ -19,36 +19,36 @@
 </template>
 
 <script>
-import ICell from "../../packages/Cell/main";
+import ICell from '../../packages/Cell/main'
 
 export default {
   components: { ICell },
-  name: "alert-md",
-  data() {
+  name: 'alert-md',
+  data () {
     return {
       n: 1
-    };
+    }
   },
-  mounted() {
-    console.log(this.$route);
+  mounted () {
+    console.log(this.$route)
   },
   methods: {
-    showAlert() {
-      this.$alert("普通弹出提示");
+    showAlert () {
+      this.$alert('普通弹出提示')
     },
-    showAlert1() {
+    showAlert1 () {
       this.$alert({
         message: `点了${this.n}次`,
         onConfirm: () => {
-          this.n++;
-          console.log(this.n);
-          this.$alert.close();
+          this.n++
+          console.log(this.n)
+          this.$alert.close()
         },
         onHide: () => {
-          console.log("关闭时触发");
+          console.log('关闭时触发')
         }
-      });
+      })
     }
   }
-};
+}
 </script>

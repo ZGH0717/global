@@ -42,19 +42,19 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      searchval: ""
-    };
+      searchval: ''
+    }
   },
   computed: {},
-  mounted() {},
+  mounted () {},
   methods: {
-    searchHandle() {
-      console.log(this.searchval);
+    searchHandle () {
+      console.log(this.searchval)
     }
   }
-};
+}
 </script>
 
 <style lang="less" scoped>

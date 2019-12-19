@@ -41,17 +41,17 @@ export default {
     group: {
       type: Object,
       default: () => {
-        return [];
+        return []
       }
     },
     base: String
   },
-  data() {
+  data () {
     return {
       isOpen: true
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="postcss">

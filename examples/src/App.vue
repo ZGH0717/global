@@ -30,26 +30,26 @@
 </template>
 
 <script>
-import "highlight.js/styles/atom-one-dark.css";
+import 'highlight.js/styles/atom-one-dark.css'
 
-import navConfig from "./nav.config.json";
-import PageHeader from "./components/page-header";
-import SideNav from "./components/side-nav";
-import FooterNav from "./components/footer-nav";
+import navConfig from './nav.config.json'
+import PageHeader from './components/page-header'
+import SideNav from './components/side-nav'
+import FooterNav from './components/footer-nav'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     PageHeader,
     SideNav,
     FooterNav
   },
-  data() {
+  data () {
     return {
       navConfig: navConfig
-    };
+    }
   }
-};
+}
 </script>
 
 <style>

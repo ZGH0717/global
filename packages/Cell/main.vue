@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "HuaCell",
+  name: 'HuaCell',
   props: {
     isArrow: {
       type: Boolean,
@@ -24,16 +24,16 @@ export default {
       default: false
     }
   },
-  data() {
+  data () {
     return {
       isActive: false
-    };
+    }
   },
   methods: {
-    handle() {
-      if (this.isRoate) this.isActive = !this.isActive;
-      this.$emit("click", this.isActive);
+    handle () {
+      if (this.isRoate) this.isActive = !this.isActive
+      this.$emit('click', this.isActive)
     }
   }
-};
+}
 </script>

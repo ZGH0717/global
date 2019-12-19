@@ -38,60 +38,57 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       selectValue: [
         {
           id: 1,
-          city: "厦门"
+          city: '厦门'
         }
       ],
       list: [
         {
           id: 1,
-          city: "厦门"
+          city: '厦门'
         },
         {
           id: 2,
-          city: "广州"
+          city: '广州'
         },
         {
           id: 3,
-          city: "深圳"
+          city: '深圳'
         },
         {
           id: 4,
-          city: "上海"
+          city: '上海'
         },
         {
           id: 5,
-          city: "北京"
+          city: '北京'
         },
         {
           id: 6,
-          city: "杭州"
+          city: '杭州'
         },
         {
           id: 7,
-          city: "武汉"
+          city: '武汉'
         },
         {
           id: 8,
-          city: "南京"
+          city: '南京'
         },
         {
           id: 9,
-          city: "西安"
+          city: '西安'
         }
       ]
-    };
+    }
   },
   watch: {},
   methods: {}
-};
+}
 </script>
 <style>
-.btn1 {
-  box-shadow: inset 0 0px 1000px rgba(0, 0, 0, 0.125);
-}
 </style>

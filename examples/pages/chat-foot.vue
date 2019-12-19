@@ -8,13 +8,13 @@
 
 <script>
 export default {
-  name: "chat-foot",
+  name: 'chat-foot',
   methods: {
-    onSend(val) {
-      this.$alert(`发送内容为${val}`);
+    onSend (val) {
+      this.$alert(`发送内容为${val}`)
     }
   }
-};
+}
 </script>
 
 <style scoped></style>

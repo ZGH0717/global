@@ -36,16 +36,16 @@
 </template>
 
 <script>
-import Avatar from "../../packages/Avatar/main";
+import Avatar from '../../packages/Avatar/main'
 
 export default {
   components: { Avatar },
-  name: "avatar-md",
-  data() {
+  name: 'avatar-md',
+  data () {
     return {
       image:
-        "https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=3d85fbc3942f07085f052d06d11fdfa4/5fdf8db1cb134954b37001e85c4e9258d0094ad4.jpg"
-    };
+        'https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=3d85fbc3942f07085f052d06d11fdfa4/5fdf8db1cb134954b37001e85c4e9258d0094ad4.jpg'
+    }
   }
-};
+}
 </script>

@@ -73,26 +73,26 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       active: false,
       active2: false,
       active3: false,
       active4: false
-    };
+    }
   },
   methods: {
-    showAlert(val) {
+    showAlert (val) {
       this.$alert({
         message: `选择的是${val}`,
         onConfirm: () => {
-          this.active2 = false;
-          this.active3 = false;
-          this.$alert.close();
+          this.active2 = false
+          this.active3 = false
+          this.$alert.close()
         },
         onHide: () => {}
-      });
+      })
     }
   }
-};
+}
 </script>

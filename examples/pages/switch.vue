@@ -11,25 +11,25 @@
 
 <script>
 export default {
-  name: "switch-md",
-  data() {
+  name: 'switch-md',
+  data () {
     return {
       taggleActive: false
-    };
+    }
   },
   methods: {
-    clickHandle() {
+    clickHandle () {
       this.$confirm({
-        message: `是否${this.taggleActive ? "关闭" : "开启"}夜间模式？`,
+        message: `是否${this.taggleActive ? '关闭' : '开启'}夜间模式？`,
         onConfirm: () => {
-          this.taggleActive = !this.taggleActive;
-          this.$confirm.close();
+          this.taggleActive = !this.taggleActive
+          this.$confirm.close()
         },
         onCancel: () => {
-          this.$confirm.close();
+          this.$confirm.close()
         }
-      });
+      })
     }
   }
-};
+}
 </script>

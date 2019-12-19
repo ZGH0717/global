@@ -10,16 +10,16 @@
 
 <script>
 export default {
-  name: "hello",
-  data() {
+  name: 'hello',
+  data () {
     return {
-      msg: ""
-    };
+      msg: ''
+    }
   },
   methods: {
-    handleClick(msg) {
-      this.msg = msg;
+    handleClick (msg) {
+      this.msg = msg
     }
   }
-};
+}
 </script>

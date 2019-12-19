@@ -39,31 +39,28 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      value1: "",
-      value2: "",
-      value3: "",
-      value4: ""
-    };
+      value1: '',
+      value2: '',
+      value3: '',
+      value4: ''
+    }
   },
   methods: {
-    searchHandle(val) {
+    searchHandle (val) {
       this.$alert({
         message: `输入的值为：${val}`,
         onConfirm: () => {
-          this.$alert.close();
+          this.$alert.close()
         },
         onHide: () => {
-          this.$alert.close();
+          this.$alert.close()
         }
-      });
+      })
     }
   }
-};
+}
 </script>
 <style>
-.btn1 {
-  box-shadow: inset 0 0px 1000px rgba(0, 0, 0, 0.125);
-}
 </style>

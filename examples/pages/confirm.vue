@@ -13,43 +13,43 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       n: 0,
-      nickname: "执法大队"
-    };
+      nickname: '执法大队'
+    }
   },
   computed: {},
-  mounted() {},
+  mounted () {},
   methods: {
-    showConfirm() {
+    showConfirm () {
       this.$confirm({
-        message: "修改昵称",
+        message: '修改昵称',
         content: this.nickname,
         isInput: true,
         onConfirm: confirm => {
-          this.nickname = confirm.content;
-          console.log(this.nickname);
+          this.nickname = confirm.content
+          console.log(this.nickname)
         },
         onCancel: () => {
-          this.$confirm.close();
-          console.log("点击取消触发");
+          this.$confirm.close()
+          console.log('点击取消触发')
         }
-      });
+      })
     },
 
-    showConfirm1() {
+    showConfirm1 () {
       this.$confirm({
-        message: "普通弹出提示",
+        message: '普通弹出提示',
         onConfirm: confirm => {
-          console.log(confirm);
+          console.log(confirm)
         },
         onCancel: () => {
-          this.$confirm.close();
-          console.log("点击取消触发");
+          this.$confirm.close()
+          console.log('点击取消触发')
         }
-      });
+      })
     }
   }
-};
+}
 </script>

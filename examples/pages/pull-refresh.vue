@@ -20,32 +20,29 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       loading: false,
       refreshNum: 0,
       length: 15
-    };
+    }
   },
   methods: {
-    update() {
+    update () {
       setTimeout(() => {
-        this.loading = false;
-        this.refreshNum++;
-        this.length = 15;
-      }, 3000);
+        this.loading = false
+        this.refreshNum++
+        this.length = 15
+      }, 3000)
     },
-    loadMore() {
+    loadMore () {
       setTimeout(() => {
-        this.loading = false;
-        this.length += 10;
-      }, 2000);
+        this.loading = false
+        this.length += 10
+      }, 2000)
     }
   }
-};
+}
 </script>
 <style>
-.btn1 {
-  box-shadow: inset 0 0px 1000px rgba(0, 0, 0, 0.125);
-}
 </style>

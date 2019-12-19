@@ -26,55 +26,52 @@
 
 <script>
 export default {
-  name: "alert-md",
-  data() {
+  name: 'alert-md',
+  data () {
     return {
       type: [
-        "btn-default",
-        "btn-primary-color",
-        "btn-success-color",
-        "btn-info-color",
-        "btn-warning-color",
-        "btn-danger-color",
-        "btn-primary",
-        "btn-success",
-        "btn-info",
-        "btn-warning",
-        "btn-danger"
+        'btn-default',
+        'btn-primary-color',
+        'btn-success-color',
+        'btn-info-color',
+        'btn-warning-color',
+        'btn-danger-color',
+        'btn-primary',
+        'btn-success',
+        'btn-info',
+        'btn-warning',
+        'btn-danger'
       ],
-      size: ["btn-lg", "btn-sm", "btn-xs"]
-    };
+      size: ['btn-lg', 'btn-sm', 'btn-xs']
+    }
   },
   computed: {
-    list() {
-      let items = [];
+    list () {
+      const items = []
       this.type.forEach(type => {
         this.size.forEach(size => {
-          let item = { type, size };
-          items.push(item);
-        });
-      });
-      return items;
+          const item = { type, size }
+          items.push(item)
+        })
+      })
+      return items
     }
   },
   methods: {
-    showAlert() {
+    showAlert () {
       this.$alert({
         message: `点了${this.n}次`,
         onShow: () => {
-          console.log(this);
-          this.n++;
+          console.log(this)
+          this.n++
         },
         onHide: () => {
-          this.$alert.close();
+          this.$alert.close()
         }
-      });
+      })
     }
   }
-};
+}
 </script>
 <style>
-.btn1 {
-  box-shadow: inset 0 0px 1000px rgba(0, 0, 0, 0.125);
-}
 </style>

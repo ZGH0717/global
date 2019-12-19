@@ -18,21 +18,21 @@
 </template>
 
 <script>
-import navConfig from "../nav.config.json";
-import MobileNav from "./mobile-nav";
+import navConfig from '../nav.config.json'
+import MobileNav from './mobile-nav'
 
 export default {
-  data() {
+  data () {
     return {
-      data: navConfig["zh-CN"],
-      base: "/component"
-    };
+      data: navConfig['zh-CN'],
+      base: '/component'
+    }
   },
 
   components: {
     MobileNav
   }
-};
+}
 </script>
 
 <style lang="postcss">

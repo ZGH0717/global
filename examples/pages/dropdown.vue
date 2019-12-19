@@ -74,32 +74,32 @@
 
 <script>
 export default {
-  name: "dropdown-md",
-  data() {
-    return {};
+  name: 'dropdown-md',
+  data () {
+    return {}
   },
-  mounted() {
-    console.log(this.$route);
+  mounted () {
+    console.log(this.$route)
   },
   methods: {
-    logoutHandle() {
-      this.$alert("普通弹出提示");
+    logoutHandle () {
+      this.$alert('普通弹出提示')
     },
-    showAlert1() {
+    showAlert1 () {
       this.$alert({
         message: `点了${this.n}次`,
         onConfirm: () => {
-          this.n++;
-          console.log(this.n);
-          this.$alert.close();
+          this.n++
+          console.log(this.n)
+          this.$alert.close()
         },
         onHide: () => {
-          console.log("关闭时触发");
+          console.log('关闭时触发')
         }
-      });
+      })
     }
   }
-};
+}
 </script>
 <style lang="less">
 .user-box {

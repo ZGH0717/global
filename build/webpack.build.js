@@ -4,6 +4,7 @@ const config = require('./webpack.base.conf')
 const utils = require('./utils')
 config.entry = {
   'hua-ui.common':'./src/index.js',
+  'index':'./src/index.js',
   ...utils.getComponentEntries('packages')
 }
 

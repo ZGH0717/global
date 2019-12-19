@@ -19,30 +19,27 @@
 
 <script>
 export default {
-  name: "alert-md",
-  data() {
+  name: 'alert-md',
+  data () {
     return {
       taggleActive: false
-    };
+    }
   },
   methods: {
-    showAlert() {
+    showAlert () {
       this.$alert({
         message: `点了${this.n}次`,
         onShow: () => {
-          console.log(this);
-          this.n++;
+          console.log(this)
+          this.n++
         },
         onHide: () => {
-          this.$alert.close();
+          this.$alert.close()
         }
-      });
+      })
     }
   }
-};
+}
 </script>
 <style>
-.btn1 {
-  box-shadow: inset 0 0px 1000px rgba(0, 0, 0, 0.125);
-}
 </style>

@@ -2,7 +2,7 @@
   <div class="propBox">
     <transition name="hua-popup">
       <div
-        class="pt-30 pl-15 pr-15  confirm  bg-f"
+        class="pt-30 pl-15 pr-15 hua-confirm  bg-f"
         ref="prop"
         v-show="visible"
         :style="styles"

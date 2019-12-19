@@ -110,9 +110,11 @@ exports.getComponentEntries = (path) => {
     const isDir = fs.statSync(itemPath).isDirectory();
     if(item.indexOf('hua-css')===-1){
       if (isDir) {
+        item = item.toLowerCase()
         ret[item] = resolve(join(itemPath, 'index.js'))
       } else {
-        const [name] = item.split('.')
+        let name = name.toLowerCase()
+         [name] = item.split('.')
         ret[name] = resolve(`${itemPath}`)
       }
     }

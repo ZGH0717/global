@@ -1,7 +1,7 @@
 <template>
   <div class="propBox">
     <transition name="hua-popup">
-      <div class="pt-30 pl-15 pr-15 alert bg-f" ref="prop" v-show="visible">
+      <div class="pt-30 pl-15 pr-15 hua-alert bg-f" ref="prop" v-show="visible">
         <slot>
           <div class="color-3  pl-15 pr-15 fs-16" style="word-wrap: break-word">
             {{ message }}

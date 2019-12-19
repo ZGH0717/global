@@ -15,12 +15,12 @@
 
 <script>
 export default {
-  name: "HuaAvatar",
+  name: 'HuaAvatar',
   props: {
     image: {
       type: String,
       default:
-        "http://thirdwx.qlogo.cn/mmopen/t3ZdRH8jZDJ8a7JRBUM6ibFzblvKgbQ3Zze5WVPhEl7yKhnCR9G7oic6kGqcZoiaxNITDxOxdDiadlPnQtiaD9qIpM8C28JmnBf6V/132"
+        'http://thirdwx.qlogo.cn/mmopen/t3ZdRH8jZDJ8a7JRBUM6ibFzblvKgbQ3Zze5WVPhEl7yKhnCR9G7oic6kGqcZoiaxNITDxOxdDiadlPnQtiaD9qIpM8C28JmnBf6V/132'
     },
     isCircle: {
       type: Boolean,
@@ -36,38 +36,38 @@ export default {
     },
     width: {
       type: [String, Number],
-      default: ""
+      default: ''
     },
     height: {
       type: [String, Number],
-      default: ""
+      default: ''
     }
   },
   computed: {
-    unit() {
-      return "px";
+    unit () {
+      return 'px'
     },
-    currentWidth() {
+    currentWidth () {
       return this.width
-        ? typeof this.width === "string"
+        ? typeof this.width === 'string'
           ? this.width
           : this.width + this.unit
-        : typeof this.size === "string"
-        ? this.size
-        : this.size + this.unit;
+        : typeof this.size === 'string'
+          ? this.size
+          : this.size + this.unit
     },
-    currentHeight() {
+    currentHeight () {
       return this.height
-        ? typeof this.height === "string"
+        ? typeof this.height === 'string'
           ? this.height
           : this.height + this.unit
-        : typeof this.size === "string"
-        ? this.size
-        : this.size + this.unit;
+        : typeof this.size === 'string'
+          ? this.size
+          : this.size + this.unit
     },
-    paddingBottom() {
-      return this.width && !this.height ? "100%" : "0";
+    paddingBottom () {
+      return this.width && !this.height ? '100%' : '0'
     }
   }
-};
+}
 </script>

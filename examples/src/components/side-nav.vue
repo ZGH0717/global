@@ -64,22 +64,23 @@ export default {
     data: Array,
     base: {
       type: String,
-      default: ""
+      default: ''
     }
   },
 
   methods: {
-    handleTitleClick(item) {
-      const firstGroup = item.groups && item.groups[0];
+    handleTitleClick (item) {
+      const firstGroup = item.groups && item.groups[0]
       if (firstGroup && firstGroup.list && firstGroup.list.length !== 0) {
-        return this.$router.replace(this.base + firstGroup.list[0].path);
+        return this.$router.replace(this.base + firstGroup.list[0].path)
       }
     }
   }
-};
+}
 </script>
 
-<style lang="postcss">
+<style lang="less">
+  
 .side-nav {
   flex: 0 0 250px;
   box-sizing: border-box;
@@ -91,7 +92,6 @@ export default {
   &::-webkit-scrollbar {
     height: 6px;
     width: 6px;
-    /*background-color: #ccc;*/
   }
   &::-webkit-scrollbar-thumb {
     border-radius: 6px;
@@ -119,7 +119,6 @@ export default {
       line-height: 40px;
       height: 40px;
       margin: 0;
-      padding: 0;
       text-decoration: none;
       display: block;
       position: relative;

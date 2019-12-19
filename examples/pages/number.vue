@@ -20,17 +20,14 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       num: 1,
       num2: 1,
       num1: 1
-    };
+    }
   }
-};
+}
 </script>
 <style>
-.btn1 {
-  box-shadow: inset 0 0px 1000px rgba(0, 0, 0, 0.125);
-}
 </style>
