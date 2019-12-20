@@ -1,8 +1,8 @@
-import Collapse from "./main";
+import Collapse from './main'
 
 /* istanbul ignore next */
-Collapse.install = function(Vue) {
-  Vue.component(Collapse.name, Collapse);
-};
+Collapse.install = function (Vue) {
+  Vue.component(Collapse.name, Collapse)
+}
 
-export default Collapse;
+export default Collapse

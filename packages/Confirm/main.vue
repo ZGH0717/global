@@ -55,38 +55,38 @@
 
 <script>
 export default {
-  name: "HuaConfirm",
-  data() {
+  name: 'HuaConfirm',
+  data () {
     return {
-      message: "消息",
+      message: '消息',
       isMaskClick: false,
       visible: false,
       styles: {},
-      onConfirm: function() {},
-      onCancel: function() {},
-      content: "",
+      onConfirm: function () {},
+      onCancel: function () {},
+      content: '',
       isInput: false
-    };
+    }
   },
   computed: {},
-  mounted() {},
+  mounted () {},
   methods: {
-    _show() {
-      this.visible = true;
+    _show () {
+      this.visible = true
     },
-    _close() {
-      this.visible = false;
+    _close () {
+      this.visible = false
     },
-    maskHandle() {
-      if (!this.isMaskClick) return;
-      this._close();
+    maskHandle () {
+      if (!this.isMaskClick) return
+      this._close()
     },
-    handleSure() {
-      this.onConfirm(this);
+    handleSure () {
+      this.onConfirm(this)
     },
-    hide() {
-      this.onCancel(this);
+    hide () {
+      this.onCancel(this)
     }
   }
-};
+}
 </script>

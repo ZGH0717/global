@@ -26,41 +26,41 @@
 
 <script>
 export default {
-  name: "hua-Alert",
-  data() {
+  name: 'hua-Alert',
+  data () {
     return {
       isClose: false,
-      message: "",
+      message: '',
       isMaskClick: false,
       visible: false,
       onHide: () => {},
       onConfirm: () => {
-        this._close();
+        this._close()
       }
-    };
-  },
-  computed: {},
-  mounted() {},
-  methods: {
-    _show() {
-      this.visible = true;
-    },
-    _close() {
-      this.visible = false;
-    },
-    maskHandle() {
-      if (!this.isMaskClick) return;
-      this._close();
-    },
-    handleSure() {
-      this.onConfirm();
-    },
-    hide() {
-      this.onHide();
     }
   },
-  beforeDestory() {
-    this._close();
+  computed: {},
+  mounted () {},
+  methods: {
+    _show () {
+      this.visible = true
+    },
+    _close () {
+      this.visible = false
+    },
+    maskHandle () {
+      if (!this.isMaskClick) return
+      this._close()
+    },
+    handleSure () {
+      this.onConfirm()
+    },
+    hide () {
+      this.onHide()
+    }
+  },
+  beforeDestory () {
+    this._close()
   }
-};
+}
 </script>

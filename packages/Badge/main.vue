@@ -1,64 +1,39 @@
 <template>
   <div
     class="hua-badge"
-    :class="{ 'show-count': count > 0 }"
-    :style="{
-      top: currentTop,
-      right: currentRight,
-      bottom: currentBottom,
-      left: currentLeft
-    }"
   >
-    {{ count > 0 ? count : "" }}
+    <slot></slot>
+    <sup
+      v-if="isDot || value"
+      class="hua-badge__content"
+      :class="{ 'show-value': !isDot }"
+    >
+       {{content}}
+    </sup>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HuaBadge",
+  name: 'HuaBadge',
   props: {
-    count: {
+    value: {
       type: [String, Number],
-      default: 0
+      default: ''
     },
-    top: {
-      type: [String, Number],
-      default: "auto"
+    isDot: {
+      type: Boolean,
+      default: false
     },
-    right: {
-      type: [String, Number],
-      default: "auto"
-    },
-    left: {
-      type: [String, Number],
-      default: "auto"
-    },
-    bottom: {
-      type: [String, Number],
-      default: "auto"
+    max: {
+      type: Number,
+      default: 99
     }
   },
   computed: {
-    unit() {
-      return "px";
-    },
-
-    currentTop() {
-      return typeof this.top === "string" ? this.top : this.top + this.unit;
-    },
-    currentRight() {
-      return typeof this.right === "string"
-        ? this.right
-        : this.right + this.unit;
-    },
-    currentBottom() {
-      return typeof this.bottom === "string"
-        ? this.bottom
-        : this.bottom + this.unit;
-    },
-    currentLeft() {
-      return typeof this.left === "string" ? this.left : this.left + this.unit;
+    content () {
+      return typeof this.value === 'number' ? this.value > this.max ? `${this.value}+` : this.value : this.value
     }
   }
-};
+}
 </script>

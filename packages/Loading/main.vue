@@ -13,30 +13,30 @@
 
 <script>
 export default {
-  name: "HuaLoading",
+  name: 'HuaLoading',
   props: {
     type: {
       type: String,
-      default: ""
+      default: ''
     },
     position: {
       type: String,
-      default: ""
+      default: ''
     },
     color: {
       type: String,
-      default: "#fff"
+      default: '#fff'
     },
     size: {
       type: String,
-      default: "40"
+      default: '40'
     }
   },
-  data() {
+  data () {
     return {
-      attr: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f"]
-    };
+      attr: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f']
+    }
   },
   computed: {}
-};
+}
 </script>

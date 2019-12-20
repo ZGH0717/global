@@ -1,8 +1,8 @@
-import Checkbox from "./main";
+import Checkbox from './main'
 
 /* istanbul ignore next */
-Checkbox.install = function(Vue) {
-  Vue.component(Checkbox.name, Checkbox);
-};
+Checkbox.install = function (Vue) {
+  Vue.component(Checkbox.name, Checkbox)
+}
 
-export default Checkbox;
+export default Checkbox

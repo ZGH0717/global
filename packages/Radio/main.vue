@@ -16,71 +16,71 @@
 
 <script>
 export default {
-  name: "HuaRadio",
+  name: 'HuaRadio',
   props: {
     iconfont: {
       type: String,
-      default: "button"
+      default: 'button'
     },
     type: {
       type: String,
-      default: "button"
+      default: 'button'
     },
     valueName: {
       type: String,
-      default: "value"
+      default: 'value'
     },
     keyName: {
       type: String,
-      default: "name"
+      default: 'name'
     },
     value: {
-      default() {
+      default () {
         return {
-          value: "1",
-          name: "厦门"
-        };
+          value: '1',
+          name: '厦门'
+        }
       }
     },
     list: {
-      default() {
+      default () {
         return [
           {
-            value: "1",
-            name: "厦门"
+            value: '1',
+            name: '厦门'
           },
           {
-            value: "2",
-            name: "广州"
+            value: '2',
+            name: '广州'
           }
-        ];
+        ]
       }
     }
   },
-  data() {
+  data () {
     return {
       selectValue: this.value,
       items: this.list
-    };
+    }
   },
   computed: {
-    activeIndex() {
-      let idx = -1;
+    activeIndex () {
+      let idx = -1
       this.items.forEach((item, index) => {
         if (item[this.valueName] === this.selectValue[this.valueName]) {
-          idx = index;
+          idx = index
         }
-      });
-      return idx;
+      })
+      return idx
     }
   },
   watch: {
-    selectValue(val) {
-      this.$emit("input", val);
+    selectValue (val) {
+      this.$emit('input', val)
     },
-    value() {
-      this.selectValue = this.value;
+    value () {
+      this.selectValue = this.value
     }
   }
-};
+}
 </script>

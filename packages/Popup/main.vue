@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "HuaPopup",
+  name: 'HuaPopup',
   props: {
     value: {
       type: Boolean,
@@ -29,30 +29,30 @@ export default {
     },
     position: {
       type: String,
-      default: ""
+      default: ''
     }
   },
-  data() {
+  data () {
     return {
       currentActive: this.value
-    };
+    }
   },
   watch: {
-    currentActive(val) {
-      this.$emit("input", val);
+    currentActive (val) {
+      this.$emit('input', val)
     },
-    value() {
-      this.currentActive = this.value;
+    value () {
+      this.currentActive = this.value
     }
   },
   methods: {
-    hideProp() {
-      this.currentActive = false;
+    hideProp () {
+      this.currentActive = false
     },
-    maskHandle() {
-      if (!this.isMaskClick) return;
-      this.hideProp();
+    maskHandle () {
+      if (!this.isMaskClick) return
+      this.hideProp()
     }
   }
-};
+}
 </script>

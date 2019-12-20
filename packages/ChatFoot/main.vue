@@ -34,61 +34,61 @@
 </template>
 
 <script>
-var emoji = require("emoji");
-var EMOJI_MAP = emoji.EMOJI_MAP;
+var emoji = require('emoji')
+var EMOJI_MAP = emoji.EMOJI_MAP
 
 export default {
-  name: "HuaChatFoot",
+  name: 'HuaChatFoot',
   props: {
     value: {
       type: String,
-      default: ""
+      default: ''
     }
   },
-  data() {
+  data () {
     return {
       currentValue: this.value,
       showEmoji: false,
       isFocus: false
-    };
+    }
   },
   computed: {
-    list() {
-      let attr = [];
+    list () {
+      let attr = []
       for (var key in EMOJI_MAP) {
-        attr.push(key);
+        attr.push(key)
       }
-      return attr;
+      return attr
     }
   },
   watch: {
-    value(val) {
-      this.currentValue = val;
+    value (val) {
+      this.currentValue = val
     },
-    currentValue(val) {
-      this.$emit("input", val);
+    currentValue (val) {
+      this.$emit('input', val)
     }
   },
-  mounted() {},
+  mounted () {},
   methods: {
-    _close() {
-      this.showEmoji = false;
+    _close () {
+      this.showEmoji = false
     },
-    _show() {
-      this.showEmoji = true;
+    _show () {
+      this.showEmoji = true
     },
-    sendHandle() {
-      this._close();
-      this.$emit("sendHandle", this.currentValue);
+    sendHandle () {
+      this._close()
+      this.$emit('sendHandle', this.currentValue)
     },
-    bindClick(item) {
-      this.currentValue += item;
+    bindClick (item) {
+      this.currentValue += item
     },
-    changeShowHandle() {
+    changeShowHandle () {
       setTimeout(() => {
-        this._show();
-      }, 100);
+        this._show()
+      }, 100)
     }
   }
-};
+}
 </script>

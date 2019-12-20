@@ -6,12 +6,12 @@
 
 <script>
 export default {
-  name: "HuaTag",
+  name: 'HuaTag',
   props: {
     type: {
       type: String,
-      default: "tag-default"
+      default: 'tag-default'
     }
   }
-};
+}
 </script>

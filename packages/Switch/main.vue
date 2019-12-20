@@ -10,31 +10,31 @@
 
 <script>
 export default {
-  name: "HuaSwitch",
+  name: 'HuaSwitch',
   props: {
     value: {
       type: Boolean,
       default: false
     }
   },
-  data() {
+  data () {
     return {
       currentValue: this.value
-    };
+    }
   },
   watch: {
-    currentValue(val) {
-      this.$emit("input", val);
-      this.$emit("change", val);
+    currentValue (val) {
+      this.$emit('input', val)
+      this.$emit('change', val)
     },
-    value() {
-      this.currentValue = this.value;
+    value () {
+      this.currentValue = this.value
     }
   },
   methods: {
-    Handle() {
-      this.$emit("click");
+    Handle () {
+      this.$emit('click')
     }
   }
-};
+}
 </script>

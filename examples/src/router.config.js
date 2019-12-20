@@ -1,40 +1,40 @@
 const registerRoute = (navConfig, isMobile) => {
-  let route = [];
-  let navs = navConfig["zh-CN"];
+  let route = []
+  let navs = navConfig['zh-CN']
   navs.forEach(nav => {
     if (isMobile && !nav.showInMobile) {
-      return;
+      return
     }
 
     if (nav.groups) {
       nav.groups.forEach(group => {
         group.list.forEach(nav => {
-          addRoute(nav);
-        });
-      });
+          addRoute(nav)
+        })
+      })
     } else if (nav.children) {
       nav.children.forEach(nav => {
-        addRoute(nav);
-      });
+        addRoute(nav)
+      })
     } else {
-      addRoute(nav);
+      addRoute(nav)
     }
-  });
+  })
 
-  function addRoute(page) {
+  function addRoute (page) {
     const component = isMobile
       ? () => import(`../pages${page.path}.vue`)
-      : () => import(`../docs${page.path}.md`);
+      : () => import(`../docs${page.path}.md`)
     route.push({
-      path: "/component" + page.path,
+      path: '/component' + page.path,
       component: component.default || component,
       meta: {
         title: page.title
       }
-    });
+    })
   }
 
-  return route;
-};
+  return route
+}
 
-export default registerRoute;
+export default registerRoute

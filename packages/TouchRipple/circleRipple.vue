@@ -9,26 +9,26 @@ export default {
   props: {
     mergeStyle: {
       type: Object,
-      default() {
-        return {};
+      default () {
+        return {}
       }
     },
     color: {
       type: String,
-      default: ""
+      default: ''
     },
     opacity: {
       type: Number
     }
   },
   computed: {
-    styles() {
+    styles () {
       return Object.assign(
         {},
         { color: this.color, opacity: this.opacity },
         this.mergeStyle
-      );
+      )
     }
   }
-};
+}
 </script>

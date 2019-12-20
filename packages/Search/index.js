@@ -1,8 +1,8 @@
-import Search from "./main";
+import Search from './main'
 
 /* istanbul ignore next */
-Search.install = function(Vue) {
-  Vue.component(Search.name, Search);
-};
+Search.install = function (Vue) {
+  Vue.component(Search.name, Search)
+}
 
-export default Search;
+export default Search

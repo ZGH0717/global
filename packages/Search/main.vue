@@ -24,55 +24,55 @@
 
 <script>
 export default {
-  name: "HuaSearch",
+  name: 'HuaSearch',
   props: {
     value: {
       type: String,
-      default: ""
+      default: ''
     },
     cls: {
       type: String,
-      default: ""
+      default: ''
     },
     placeholder: {
       type: String,
-      default: "搜索"
+      default: '搜索'
     }
   },
-  data() {
+  data () {
     return {
       currentActive: this.value,
       isFocus: false
-    };
+    }
   },
   watch: {
-    currentActive(val) {
-      this.$emit("input", val);
+    currentActive (val) {
+      this.$emit('input', val)
     },
-    value() {
-      this.currentActive = this.value;
+    value () {
+      this.currentActive = this.value
     }
   },
   computed: {},
-  mounted() {},
+  mounted () {},
   methods: {
-    onClick() {
-      this.$emit("click", this.currentActive);
+    onClick () {
+      this.$emit('click', this.currentActive)
     },
-    onBlur() {
-      this.isFocus = false;
-      this.$emit("blur", this.currentActive);
+    onBlur () {
+      this.isFocus = false
+      this.$emit('blur', this.currentActive)
     },
-    onFocus() {
-      this.isFocus = true;
-      this.$emit("focus", this.currentActive);
+    onFocus () {
+      this.isFocus = true
+      this.$emit('focus', this.currentActive)
     },
-    onChange() {
-      this.$emit("change", this.currentActive);
+    onChange () {
+      this.$emit('change', this.currentActive)
     },
-    clearValue() {
-      this.currentActive = "";
+    clearValue () {
+      this.currentActive = ''
     }
   }
-};
+}
 </script>

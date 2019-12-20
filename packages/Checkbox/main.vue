@@ -16,85 +16,85 @@
 
 <script>
 export default {
-  name: "HuaCheckbox",
+  name: 'HuaCheckbox',
   props: {
     type: {
       type: String,
-      default: "button"
+      default: 'button'
     },
 
     iconfont: {
       type: String,
-      default: ""
+      default: ''
     },
     valueName: {
       type: String,
-      default: "value"
+      default: 'value'
     },
     keyName: {
       type: String,
-      default: "name"
+      default: 'name'
     },
     value: {
-      default() {
+      default () {
         return [
           {
-            value: "1",
-            name: "name1"
+            value: '1',
+            name: 'name1'
           }
-        ];
+        ]
       }
     },
     list: {
-      default() {
+      default () {
         return [
           {
-            value: "1",
-            name: "name1"
+            value: '1',
+            name: 'name1'
           },
           {
-            value: "2",
-            name: "name2"
+            value: '2',
+            name: 'name2'
           }
-        ];
+        ]
       }
     }
   },
-  data() {
+  data () {
     return {
       selectValue: this.value,
       items: this.list
-    };
-  },
-  watch: {
-    selectValue(val) {
-      this.$emit("input", val);
-    },
-    value() {
-      this.selectValue = this.value;
     }
   },
-  mounted() {
+  watch: {
+    selectValue (val) {
+      this.$emit('input', val)
+    },
+    value () {
+      this.selectValue = this.value
+    }
+  },
+  mounted () {
     if (this.selectValue.length > 0) {
-      let newItems = [];
+      let newItems = []
       this.selectValue.forEach(val => {
         this.items.forEach(item => {
-          item.checked = item[this.valueName] === val[this.valueName];
-          newItems.push(item);
-        });
-      });
-      this.items = newItems;
+          item.checked = item[this.valueName] === val[this.valueName]
+          newItems.push(item)
+        })
+      })
+      this.items = newItems
     }
   },
   methods: {
-    selectHandle(index, checked) {
-      let isCheck = !checked;
-      let item = Object.assign({}, this.items[index], { checked: isCheck });
-      this.$set(this.items, index, item);
+    selectHandle (index, checked) {
+      let isCheck = !checked
+      let item = Object.assign({}, this.items[index], { checked: isCheck })
+      this.$set(this.items, index, item)
       this.selectValue = this.items.filter(val => {
-        return val.checked === 1;
-      });
+        return val.checked === 1
+      })
     }
   }
-};
+}
 </script>

@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "HuaNumber",
+  name: 'HuaNumber',
   props: {
     value: {
       type: Number,
@@ -36,49 +36,49 @@ export default {
     },
     type: {
       type: String,
-      default: ""
+      default: ''
     }
   },
-  data() {
+  data () {
     return {
       currentValue: this.value,
       currentMax: this.max,
       currentMin: this.min
-    };
+    }
   },
   watch: {
-    currentValue(val) {
-      this.$emit("input", val);
-      this.$emit("change", val);
+    currentValue (val) {
+      this.$emit('input', val)
+      this.$emit('change', val)
     },
-    value() {
-      this.currentValue = this.value;
+    value () {
+      this.currentValue = this.value
     }
   },
   methods: {
-    addHandle() {
+    addHandle () {
       if (this.currentValue >= this.max) {
-        this.currentValue = this.max || 1;
-        return;
+        this.currentValue = this.max || 1
+        return
       }
-      this.currentValue = Number(this.currentValue) + this.step * 1;
+      this.currentValue = Number(this.currentValue) + this.step * 1
     },
-    minusHandle() {
+    minusHandle () {
       if (this.currentValue <= this.min) {
-        this.currentValue = this.min;
-        return;
+        this.currentValue = this.min
+        return
       }
-      this.currentValue -= this.step * 1;
+      this.currentValue -= this.step * 1
     },
-    changeVal() {
+    changeVal () {
       if (this.currentValue >= this.max) {
-        this.currentValue = this.max;
-        return;
+        this.currentValue = this.max
+        return
       }
       if (this.currentValue <= this.min) {
-        this.currentValue = this.min;
+        this.currentValue = this.min
       }
     }
   }
-};
+}
 </script>

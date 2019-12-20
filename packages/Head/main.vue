@@ -17,39 +17,37 @@
 
 <script>
 export default {
-  name: "hua-head",
+  name: 'hua-head',
   props: {
     imgL: {
-      default() {
-        return "";
+      default () {
+        return ''
       }
     },
     title: {
-      default() {
-        return "";
+      default () {
+        return ''
       }
     },
     isBack: {
-      default() {
-        return true;
-      }
+      default: true
     },
     showMsg: {
-      default() {
-        return true;
+      default () {
+        return true
       }
     },
     borderB: {
-      default() {
-        return true;
+      default () {
+        return true
       }
     }
   },
-  data() {
+  data () {
     return {
       sideActive: false
-    };
+    }
   },
   computed: {}
-};
+}
 </script>

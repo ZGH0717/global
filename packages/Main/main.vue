@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "HuaMain",
-  componentName: "HuaMain"
-};
+  name: 'HuaMain',
+  componentName: 'HuaMain'
+}
 </script>

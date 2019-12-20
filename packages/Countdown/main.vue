@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import HuaLoading from "../Loading";
+import HuaLoading from '../Loading'
 export default {
-  name: "HuaCountdown",
+  name: 'HuaCountdown',
   props: {
     remainTime: {
       type: Number,
@@ -36,41 +36,41 @@ export default {
   components: {
     HuaLoading
   },
-  data() {
+  data () {
     return {
       time: this.remainTime,
       times: {
-        seconds: "", // 秒
-        minute: "", // 分
-        hours: "", // 时
-        day: "" // 天
+        seconds: '', // 秒
+        minute: '', // 分
+        hours: '', // 时
+        day: '' // 天
       }
-    };
+    }
   },
-  mounted() {
-    this.getRemainingTime(this.time);
+  mounted () {
+    this.getRemainingTime(this.time)
   },
   methods: {
-    getRemainingTime(remainTime) {
+    getRemainingTime (remainTime) {
       if (remainTime <= 0 || !remainTime) {
-        console.fail("传入时间格式错误或者已经完成");
-        return;
+        console.fail('传入时间格式错误或者已经完成')
+        return
       }
       // let milli;
       let timer = setInterval(() => {
         // milli = remainTime;
-        this.times.seconds = parseInt(remainTime % 60);
-        this.times.minute = parseInt((remainTime / 60) % 60);
-        this.times.hours = parseInt((remainTime / 60 / 60) % 24);
-        this.times.day = parseInt(remainTime / 60 / 60 / 24);
+        this.times.seconds = parseInt(remainTime % 60)
+        this.times.minute = parseInt((remainTime / 60) % 60)
+        this.times.hours = parseInt((remainTime / 60 / 60) % 24)
+        this.times.day = parseInt(remainTime / 60 / 60 / 24)
         if (remainTime <= 0) {
-          clearInterval(timer);
+          clearInterval(timer)
         }
         // = day + '天' + hours + '时' + minute + '分' + seconds + '秒'/* + milli + '毫秒'*/;
 
-        remainTime -= 1;
-      }, 1000);
+        remainTime -= 1
+      }, 1000)
     }
   }
-};
+}
 </script>

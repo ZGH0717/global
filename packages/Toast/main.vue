@@ -31,45 +31,45 @@
 </template>
 
 <script>
-import HuaLoading from "../Loading";
+import HuaLoading from '../Loading'
 
 export default {
-  name: "HuaToast",
+  name: 'HuaToast',
   components: {
     HuaLoading
   },
-  data() {
+  data () {
     return {
-      message: "",
+      message: '',
       visible: false,
-      type: "",
+      type: '',
       styles: {},
       timer: null,
       duration: 1000,
-      color: "#db2227"
-    };
+      color: '#db2227'
+    }
   },
   watch: {
-    visible(val) {
-      this.$emit("input", val);
+    visible (val) {
+      this.$emit('input', val)
     },
-    value() {
-      this.visible = this.value;
+    value () {
+      this.visible = this.value
     }
   },
   methods: {
-    _show() {
-      this.visible = true;
-      if (this.type) return;
+    _show () {
+      this.visible = true
+      if (this.type) return
 
-      clearTimeout(this.timer);
+      clearTimeout(this.timer)
       this.timer = setTimeout(() => {
-        this._close();
-      }, this.duration);
+        this._close()
+      }, this.duration)
     },
-    _close() {
-      this.visible = false;
+    _close () {
+      this.visible = false
     }
   }
-};
+}
 </script>

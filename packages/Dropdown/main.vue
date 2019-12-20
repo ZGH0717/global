@@ -38,62 +38,62 @@
 </template>
 
 <script>
-import { off, on } from "@/utils/dom";
+import { off, on } from '@/utils/dom'
 
 export default {
-  name: "HuaDropdown",
+  name: 'HuaDropdown',
   props: {
     placement: {
       type: String,
-      default: "bottom-left"
+      default: 'bottom-left'
     },
     trigger: {
       type: String,
-      default: "click"
+      default: 'click'
     }
   },
-  data() {
+  data () {
     return {
       dropdownTitleHeight: 0,
       dropdownTitleWidth: 0,
       showDropdown: false
-    };
+    }
   },
-  mounted() {
-    this.dropdownTitleHeight = this.$refs.dropdownTitleRef.offsetHeight;
-    this.dropdownTitleWidth = this.$refs.dropdownTitleRef.offsetWidth;
-    if (this.trigger === "click") {
-      on(this.$refs.dropdownTitleRef, "click", this.globalSelectHandle);
-      on(document, "click", this.handleDocumentClick);
-    } else if (this.trigger === "hover") {
-      on(this.$refs.dropdownRef, "mouseenter", this._show);
-      on(this.$refs.dropdownRef, "mouseleave", this._hide);
+  mounted () {
+    this.dropdownTitleHeight = this.$refs.dropdownTitleRef.offsetHeight
+    this.dropdownTitleWidth = this.$refs.dropdownTitleRef.offsetWidth
+    if (this.trigger === 'click') {
+      on(this.$refs.dropdownTitleRef, 'click', this.globalSelectHandle)
+      on(document, 'click', this.handleDocumentClick)
+    } else if (this.trigger === 'hover') {
+      on(this.$refs.dropdownRef, 'mouseenter', this._show)
+      on(this.$refs.dropdownRef, 'mouseleave', this._hide)
     }
   },
   methods: {
-    globalSelectHandle() {
-      if (this.trigger === "click") {
-        this.showDropdown = !this.showDropdown;
+    globalSelectHandle () {
+      if (this.trigger === 'click') {
+        this.showDropdown = !this.showDropdown
       }
     },
-    handleDocumentClick(e) {
+    handleDocumentClick (e) {
       if (this.$el.contains(e.target)) {
-        return;
+        return
       }
-      this._hide();
+      this._hide()
     },
-    _hide() {
-      this.showDropdown = false;
+    _hide () {
+      this.showDropdown = false
     },
-    _show() {
-      this.showDropdown = true;
+    _show () {
+      this.showDropdown = true
     },
-    offHandleDocument() {
-      off(document, "click", this.handleDocumentClick);
+    offHandleDocument () {
+      off(document, 'click', this.handleDocumentClick)
     }
   },
-  destroyed() {
-    this.offHandleDocument();
+  destroyed () {
+    this.offHandleDocument()
   }
-};
+}
 </script>

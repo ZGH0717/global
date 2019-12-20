@@ -11,20 +11,24 @@ Vue.use(Badge);
 其父元素div  position属性必须为relative 或者 absolute
 
 ```html
-<div stype="position:relative">
-  消息
-  <hua-badge :count="10" top="2" right="2"></hua-badge>
-</div>
-<div stype="position:relative">
-  消息
-  <hua-badge top="8" right="10"></hua-badge>
-</div>
+<hua-badge is-dot>
+  <hua-button size="btn-lg" class="relative">
+    消息
+  </hua-button>
+</hua-badge>
+
+
+<hua-badge value="10">
+  <hua-button size="btn-lg" class="relative">
+    消息
+  </hua-button>
+</hua-badge>
 
 ```
 ### Attributes
 
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
-| count  | 提示数量    | Number   | — | 0 |
-| top  | 距离框内顶部距离    | String   | — | 0 |
-| right  | 距离框内右侧距离    | String   | — | 0 |
+| value  | 提示内容    | Number String   | — | - |
+| is-dot  | 小圆点    | Boolean   | — | false |
+| max  | 	最大值，超过最大值会显示 '{max}+'，要求 value 是 Number 类型    | Number   | — | 99 |

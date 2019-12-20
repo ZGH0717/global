@@ -13,30 +13,30 @@
 
 <script>
 export default {
-  name: "HuaNoticeBar",
+  name: 'HuaNoticeBar',
   props: {
     content: {
       type: String,
-      default: ""
+      default: ''
     },
     seed: {
       type: Number,
       default: 0
     }
   },
-  data() {
+  data () {
     return {
-      animationDuration: ""
-    };
+      animationDuration: ''
+    }
   },
-  mounted() {
+  mounted () {
     if (this.seed > 0) {
-      this.animationDuration = this.seed + "s";
+      this.animationDuration = this.seed + 's'
     } else {
-      let p = this.$refs.p;
-      let pWidth = p.offsetWidth;
-      this.animationDuration = (pWidth / 35).toFixed(1) + "s";
+      let p = this.$refs.p
+      let pWidth = p.offsetWidth
+      this.animationDuration = (pWidth / 35).toFixed(1) + 's'
     }
   }
-};
+}
 </script>

@@ -14,23 +14,23 @@
 </template>
 
 <script>
-import Cell from "../Cell";
+import Cell from '../Cell'
 
 export default {
-  name: "HuaCollapse",
+  name: 'HuaCollapse',
   components: {
     Cell
   },
   props: {},
-  data() {
+  data () {
     return {
       isActive: false
-    };
+    }
   },
   methods: {
-    onHandle(isActive) {
-      this.isActive = isActive;
+    onHandle (isActive) {
+      this.isActive = isActive
     }
   }
-};
+}
 </script>

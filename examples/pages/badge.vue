@@ -3,16 +3,22 @@
     <hua-head :title="$route.meta.title"></hua-head>
     <div class="common-top mainBox text-center ">
       <br />
-      <hua-button size="btn-lg" class="relative">
-        消息
-        <hua-badge :count="10" top="2" right="2"></hua-badge>
-      </hua-button>
+
+        <hua-badge :value="20" :max="10">
+          <hua-button size="btn-lg" class="relative">
+            消息
+          </hua-button>
+        </hua-badge>
+
       <br />
       <br />
-      <hua-button size="btn-lg" class="relative">
-        消息
-        <hua-badge top="8" right="10"></hua-badge>
-      </hua-button>
+
+        <hua-badge is-dot>
+          <hua-button size="btn-lg" class="relative">
+            消息
+          </hua-button>
+        </hua-badge>
+
     </div>
   </div>
 </template>

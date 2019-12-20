@@ -24,28 +24,28 @@
 </template>
 
 <script>
-import TouchRipple from "../TouchRipple/index";
+import TouchRipple from '../TouchRipple/index'
 
 export default {
-  name: "HuaFoot",
+  name: 'HuaFoot',
   components: {
-    "zgh-touch-ripple": TouchRipple
+    'zgh-touch-ripple': TouchRipple
   },
   props: {
     type: {
       type: String,
-      default: ""
+      default: ''
     },
     menus: {
       type: Array,
-      default() {
-        return [];
+      default () {
+        return []
       }
     }
   },
-  data() {
-    return {};
+  data () {
+    return {}
   },
-  mouted() {}
-};
+  mouted () {}
+}
 </script>

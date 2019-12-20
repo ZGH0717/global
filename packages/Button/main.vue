@@ -6,16 +6,16 @@
 
 <script>
 export default {
-  name: "HuaButton",
+  name: 'HuaButton',
   props: {
     size: {
       type: String,
-      default: "btn-sm"
+      default: 'btn-sm'
     },
     type: {
       type: String,
-      default: "btn-default"
+      default: 'btn-default'
     }
   }
-};
+}
 </script>
