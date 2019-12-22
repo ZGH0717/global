@@ -2,7 +2,7 @@
   <div style="width:98%;">
     <div class="hua-search">
       <div class="search-input">
-        <i class="iconfont icon-search">&#xe6ac;</i>
+        <i class="iconfont icon-search"></i>
         <input
           type="text"
           v-model="currentActive"
@@ -13,9 +13,7 @@
           @change="onChange"
           :placeholder="placeholder"
         />
-        <i class="iconfont icon-close" v-if="currentActive" @click="clearValue"
-          >&#xe69a;</i
-        >
+        <i class="iconfont icon-close" v-if="currentActive" @click="clearValue"></i>
       </div>
       <span class="back" v-if="isFocus" @click="$router.go(-1)">取消</span>
     </div>
